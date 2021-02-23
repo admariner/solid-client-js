@@ -12,6 +12,7 @@ getSolidDataset("https://codesandbox-demo.inrupt.net/profile/card").then(
         profileDoc,
         "https://codesandbox-demo.inrupt.net/profile/card#me"
       );
+      // @ts-ignore
       const name = getStringNoLocale(profile, foaf.name);
       if (name) {
         document.getElementById(

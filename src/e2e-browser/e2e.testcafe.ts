@@ -44,7 +44,7 @@ config({
   silent: process.env.CI === "true",
 });
 
-fixture("End-to-end tests").page("http://localhost:1234");
+fixture("End-to-end tests").page("http://localhost:1234/end-to-end-test.html");
 
 // eslint-disable-next-line jest/expect-expect, jest/no-done-callback
 test("Creating and removing empty Containers", async (t: TestController) => {

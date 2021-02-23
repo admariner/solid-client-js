@@ -19,9 +19,9 @@ request.
 
 Although it shares the project setup, the code that exercises our library in our
 end-to-end test is isolated in end-to-end-test.html and the TypeScript files
-reachable from there. Thus, whereas the demo project is run using
-`npx parcel index.html`, the system under test is run using
-`npx parcel end-to-end-test.html`.
+reachable from there. Thus, whereas the demo project is at
+`localhost:1234/`, the system under test is at
+`localhost:1234/end-to-end-test.html`.
 
 One thing to note is that its dependency on solid-client is on the code _inside
 this repository_, rather than fetched from npm. This means that you will first
