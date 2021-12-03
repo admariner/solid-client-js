@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Module: thing/mock &#8212; Inrupt solid-client API Documentation</title>
+    <title>Module: acp/mock &#8212; Inrupt solid-client API Documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -35,8 +35,8 @@
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Module: thing/remove" href="thing_remove.html" />
-    <link rel="prev" title="Module: thing/get" href="thing_get.html" />
+    <link rel="next" title="Module: acp/policy" href="acp_policy.html" />
+    <link rel="prev" title="Module: acp/control" href="acp_control.html" />
   
   <meta name="robots" content="index" />
   
@@ -58,7 +58,7 @@
 <script type="text/javascript">
  window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
    fieldValues: {
-     description: 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/modules/thing_mock/ \n'
+     description: 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/modules/acp_mock/ \n'
    }
  });
 </script>
@@ -242,8 +242,8 @@
    Module: acp/control
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="acp_mock.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Module: acp/mock
   </a>
  </li>
@@ -317,8 +317,8 @@
    Module: thing/get
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_mock.html">
    Module: thing/mock
   </a>
  </li>
@@ -414,10 +414,15 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#mockthingfrom">
-     mockThingFrom
+    <a class="reference internal nav-link" href="#addmockacrto">
+     addMockAcrTo
     </a>
     <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#type-parameters">
+       Type parameters
+      </a>
+     </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#parameters">
        Parameters
@@ -430,6 +435,28 @@
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#defined-in">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mockacrfor">
+     mockAcrFor
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
        Defined in
       </a>
      </li>
@@ -464,29 +491,47 @@
   
               <div>
                 
-  <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / thing/mock</p>
-<section class="tex2jax_ignore mathjax_ignore" id="module-thing-mock">
-<h1>Module: thing/mock<a class="headerlink" href="#module-thing-mock" title="Permalink to this headline">¶</a></h1>
+  <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / acp/mock</p>
+<section class="tex2jax_ignore mathjax_ignore" id="module-acp-mock">
+<h1>Module: acp/mock<a class="headerlink" href="#module-acp-mock" title="Permalink to this headline">¶</a></h1>
 <section id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
 <section id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="thing_mock.html#mockthingfrom">mockThingFrom</a></p></li>
+<li><p><a class="reference external" href="acp_mock.html#addmockacrto">addMockAcrTo</a></p></li>
+<li><p><a class="reference external" href="acp_mock.html#mockacrfor">mockAcrFor</a></p></li>
 </ul>
 </section>
 </section>
 <section id="id1">
 <h2>Functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<section id="mockthingfrom">
-<h3>mockThingFrom<a class="headerlink" href="#mockthingfrom" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>mockThingFrom</strong>(<code class="docutils literal notranslate"><span class="pre">url</span></code>): <a class="reference external" href="interfaces.html#thingpersisted"><code class="docutils literal notranslate"><span class="pre">ThingPersisted</span></code></a></p>
-<p>Function for use in unit tests to mock a <a class="reference external" href="interfaces.html#thing">Thing</a> with a given URL.</p>
-<p>Warning: do not use this function in actual production code.
-This function initialises a new empty Thing and sets its URL to a given URL.
-This is useful to mock a Thing in tests of code that call e.g.
-<a class="reference external" href="thing_thing.html#asurl">asUrl</a>.</p>
-<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 0.2.0</p>
+<section id="addmockacrto">
+<h3>addMockAcrTo<a class="headerlink" href="#addmockacrto" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>addMockAcrTo</strong>&lt;<code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>, <code class="docutils literal notranslate"><span class="pre">accessControlResource?</span></code>): <code class="docutils literal notranslate"><span class="pre">T</span></code> &amp; <a class="reference external" href="acp_acp.html#withaccessibleacr"><code class="docutils literal notranslate"><span class="pre">WithAccessibleAcr</span></code></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not use this function in production code.  For use in <strong>unit tests</strong> that require a
+Resource with an <a class="reference external" href="acp_control.html#accesscontrolresource">AccessControlResource</a>.</p>
+</div>
+<p>Attaches an Access Control Resource to a given <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a> for use
+in <strong>unit tests</strong>; e.g., unit tests that call <a class="reference external" href="acp_control.html#getpolicyurlall">getPolicyUrlAll</a>.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
+<section id="type-parameters">
+<h4>Type parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
+<td class="text-align:left"><p>extends <a class="reference external" href="interfaces.html#withresourceinfo"><code class="docutils literal notranslate"><span class="pre">WithResourceInfo</span></code></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="parameters">
 <h4>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
@@ -497,21 +542,64 @@ This is useful to mock a Thing in tests of code that call e.g.
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">url</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
-<td class="text-align:left"><p>The URL that the mocked Thing pretends identifies it.</p></td>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">resource</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
+<td class="text-align:left"><p>The Resource to mock up with a new resource ACL.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">accessControlResource</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="acp_control.html#accesscontrolresource"><code class="docutils literal notranslate"><span class="pre">AccessControlResource</span></code></a></p></td>
+<td class="text-align:left"><p>The Access Control Resource to attach to the given Resource.</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="returns">
 <h4>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="interfaces.html#thingpersisted"><code class="docutils literal notranslate"><span class="pre">ThingPersisted</span></code></a></p>
-<p>A new Thing, pretending to be identified by the given URL.</p>
+<p><code class="docutils literal notranslate"><span class="pre">T</span></code> &amp; <a class="reference external" href="acp_acp.html#withaccessibleacr"><code class="docutils literal notranslate"><span class="pre">WithAccessibleAcr</span></code></a></p>
+<p>The input Resource with an empty resource ACL attached.</p>
 </section>
 <section id="defined-in">
 <h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
-<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/mock.ts#L37">src/thing/mock.ts:37</a></p>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/acp/mock.ts#L67">src/acp/mock.ts:67</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="mockacrfor">
+<h3>mockAcrFor<a class="headerlink" href="#mockacrfor" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>mockAcrFor</strong>(<code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code>): <a class="reference external" href="acp_control.html#accesscontrolresource"><code class="docutils literal notranslate"><span class="pre">AccessControlResource</span></code></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not use this function in production code.  For use in <strong>unit tests</strong> that require a
+<a class="reference external" href="acp_control.html#accesscontrolresource">AccessControlResource</a>.</p>
+</div>
+<p>Initialises a new empty Access Control Resource for a given Resource for use
+in <strong>unit tests</strong>.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.6.0</p>
+<section id="id2">
+<h4>Parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">resourceUrl</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
+<td class="text-align:left"><p>The URL of the Resource to which the mocked ACR should apply.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id3">
+<h4>Returns<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="acp_control.html#accesscontrolresource"><code class="docutils literal notranslate"><span class="pre">AccessControlResource</span></code></a></p>
+<p>The mocked empty Access Control Resource for the given Resource.</p>
+</section>
+<section id="id4">
+<h4>Defined in<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/acp/mock.ts#L43">src/acp/mock.ts:43</a></p>
 </section>
 </section>
 </section>
@@ -525,15 +613,15 @@ This is useful to mock a Thing in tests of code that call e.g.
               
               <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="thing_get.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="acp_control.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-title">Module: thing/get</p>
+            <p class="prev-next-title">Module: acp/control</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="thing_remove.html" title="next page">
+    <a class='right-next' id="next-link" href="acp_policy.html" title="next page">
     <div class="prev-next-info">
-        <p class="prev-next-title">Module: thing/remove</p>
+        <p class="prev-next-title">Module: acp/policy</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

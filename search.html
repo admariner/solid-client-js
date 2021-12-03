@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search &#8212; Inrupt solid-client API Documentation</title>
     
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -19,20 +20,16 @@
 
     
       
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/blank.css" />
     <link rel="stylesheet" href="_static/css/inrupt.css" type="text/css" />
     
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
@@ -43,95 +40,151 @@
   <script src="searchindex.js" defer></script>
   
   
-    <meta name="robots" content="index" />
+  <meta name="robots" content="index" />
   
-
-  <link rel="shortcut icon" href="https://docs.inrupt.com/inrupt_stickers_v2-03.png" type="image/png" />
-  <script type="text/javascript" src="https://inrupt.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-egccmf/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=41592d74"></script>
-
-  <script type="text/javascript">
-      window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
-         fieldValues: {
-            description : 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/search/ \n' 
-         }
-      });
-   </script>
-
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      if (navigator.doNotTrack && navigator.doNotTrack === "1") {
-        return;
-      }
-      var u="https://inrupt.matomo.cloud/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '3']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/inrupt.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
 
   
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+      
+      <link rel="icon" sizes="16x16" href="https://docs.inrupt.com/inrupt_stickers_v2-03.png">
+      
+    
+
+    <!-- Google Analytics -->
+    
+
+  <script type="text/javascript"
+ src="https://inrupt.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-egccmf/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=41592d74"></script>
+<script type="text/javascript">
+ window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+   fieldValues: {
+     description: 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/search/ \n'
+   }
+ });
+</script>
+
+  <!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function () {
+    if (navigator.doNotTrack && navigator.doNotTrack === "1") {
+      return;
+    }
+    var u = "https://inrupt.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.type = 'text/javascript'; g.async = true; g.src = '//cdn.matomo.cloud/inrupt.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  
 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
-<div class="container-xl">
+    <div class="container-fluid" id="banner"></div>
 
-    <a class="navbar-brand" href="https://inrupt.com/">
-      <img src="https://docs.inrupt.com/inrupt-logo-small.svg" class="logo" alt="logo">
-    </a>
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+  <div id="navbar-start">
+    
+    <!-- Override navbar-logo -->
 
-    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
-      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.inrupt.com/">Docs Home</a>
-          </li>
-         
-          <li class="nav-item">
-             <a class="nav-link" href="https://docs.inrupt.com/ess/latest/">Enterprise Solid Server</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Developer Tools</a>
-               <ul class="nav-children">
-                     <li class="nav-item nav-childitem">
-                        <a href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/">JavaScript Client Libraries</a>
-                     </li>
-                     <li class="nav-item nav-childitem">
-                        <a href="https://docs.inrupt.com/developer-tools/javascript/react-sdk">Solid React SDK</a>
-                     </li>
-               </ul>
-          </li>
-          <li class="nav-item">
-               <a class="nav-link" href="https://docs.inrupt.com/user-interface/podbrowser/">PodBrowser</a>
-          </li>
-          <li class="nav-item">
-             <a  class="nav-link" href="https://docs.inrupt.com/pod-spaces/">Pod Spaces</a>
-          </li>
-      </ul>
+   <a class="navbar-brand" href="https://inrupt.com/">
+      <img src="https://docs.inrupt.com/inrupt-logo-small.svg" class="logo" alt="Inrupt logo">
+   </a>
+    
+  </div>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  
+  <div id="navbar-collapsible" class=" collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
       
+      <div class="navbar-center-item">
+        <!-- Override navbar-nav -->
 
-      <div class="social">
-         <a class="social-icon" href="https://twitter.com/inrupt" target="_blank" title="Inrupt on Twitter" aria-label="Inrupt on Twitter"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
-         <a class="social-icon" href="https://www.linkedin.com/company/inrupt/" target="_blank" title="Inrupt on LinkedIn" aria-label="Inrupt on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-         <a class="social-icon" href="https://forum.solidproject.org/" target="_blank" title="Solid Forum" aria-label="Solid forum"> <i class="fas fa-users" aria-hidden="true"></i></a>
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/">Docs Home</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/ess/latest/">Enterprise Solid Server</a>
+         </li>
+         <li class="nav-item"><a class="nav-link" href="#">Developer Tools</a>
+            <ul class="nav-children">
+               <li class="nav-item nav-childitem">
+                  <a href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/">JavaScript Client Libraries</a>
+               </li>
+               <li class="nav-item nav-childitem">
+                  <a href="https://docs.inrupt.com/developer-tools/javascript/react-sdk/">Solid React SDK</a>
+               </li>
+            </ul>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/user-interface/podbrowser/">PodBrowser</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/pod-spaces/">Pod Spaces</a>
+         </li>
+            <li class="nav-item"><a class="nav-link" href="#">API</a>
+                 <ul class="nav-children">
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client/" >solid-client (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-authn-browser/" >solid-client-authn-browser (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-authn-node/">solid-client-authn-node (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-notifications/">solid-client-notifications (JS)</a>
+                    </li>
+                 </ul>
+            </li></ul>
       </div>
       
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://inrupt.atlassian.net/servicedesk" rel="noopener" target="_blank" title="Support Desk">
+            <span><i class="fas fa-tools"></i></span>
+            <label class="sr-only">Support Desk</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://forum.solidproject.org/" rel="noopener" target="_blank" title="Solid forum">
+            <span><i class="fas fa-users"></i></span>
+            <label class="sr-only">Solid forum</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://inrupt.com/blog" rel="noopener" target="_blank" title="Inrupt Blog">
+            <span><i class="fas fa-blog"></i></span>
+            <label class="sr-only">Inrupt Blog</label>
+          </a>
+        </li>
+      </ul>
+      </div>
       
     </div>
+  </div>
 </div>
     </nav>
     
@@ -139,253 +192,277 @@
     <div class="container-xl">
       <div class="row">
           
-          <div class="col-12 col-md-3 bd-sidebar">
-
-<form class="bd-search d-flex align-items-center" action="#" method="get">
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="#" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form>
-
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-
-
-  
-  
-
-  
-  <ul class="nav bd-sidenav">
+     <p class="caption">
+       <a class="reference internal" href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client">Inrupt solid-client API</a>
+     </p>
      
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/acl_acl.html">Module: acl/acl</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/acl_agent.html">Module: acl/agent</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/acl_class.html">Module: acl/class</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/acl_group.html">Module: acl/group</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/acl_mock.html">Module: acl/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/interfaces.html">Module: interfaces</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/resource_file.html">Module: resource/file</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/resource_mock.html">Module: resource/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/resource_resource.html">Module: resource/resource</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/resource_soliddataset.html">Module: resource/solidDataset</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/thing_add.html">Module: thing/add</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/thing_get.html">Module: thing/get</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/thing_mock.html">Module: thing/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/thing_remove.html">Module: thing/remove</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/thing_set.html">Module: thing/set</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="modules/thing_thing.html">Module: thing/thing</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="classes/interfaces.solidclienterror.html">Class: SolidClientError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="classes/resource_resource.fetcherror.html">Class: FetchError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="classes/thing_thing.thingexpectederror.html">Class: ThingExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="classes/thing_thing.validpropertyurlexpectederror.html">Class: ValidPropertyUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="classes/thing_thing.validthingurlexpectederror.html">Class: ValidThingUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="classes/thing_thing.validvalueurlexpectederror.html">Class: ValidValueUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-  </ul>
-</div>
+
+    <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/access_universal.html">
+   Module: access/universal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/acl_acl.html">
+   Module: acl/acl
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/acl_agent.html">
+   Module: acl/agent
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/acl_class.html">
+   Module: acl/class
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/acl_group.html">
+   Module: acl/group
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/acl_mock.html">
+   Module: acl/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/acp_acp.html">
+   Module: acp/acp
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/acp_control.html">
+   Module: acp/control
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/acp_mock.html">
+   Module: acp/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/acp_policy.html">
+   Module: acp/policy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/acp_rule.html">
+   Module: acp/rule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/formats.html">
+   Module: formats
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/interfaces.html">
+   Module: interfaces
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/profile_jwks.html">
+   Module: profile/jwks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/profile_webid.html">
+   Module: profile/webid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/rdfjs.html">
+   Module: rdfjs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/resource_file.html">
+   Module: resource/file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/resource_mock.html">
+   Module: resource/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/resource_resource.html">
+   Module: resource/resource
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/resource_solidDataset.html">
+   Module: resource/solidDataset
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/thing_add.html">
+   Module: thing/add
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/thing_build.html">
+   Module: thing/build
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/thing_get.html">
+   Module: thing/get
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/thing_mock.html">
+   Module: thing/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/thing_remove.html">
+   Module: thing/remove
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/thing_set.html">
+   Module: thing/set
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="modules/thing_thing.html">
+   Module: thing/thing
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="interfaces/access_universal.Access.html">
+   Interface: Access
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="classes/interfaces.SolidClientError.html">
+   Class: SolidClientError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="classes/resource_resource.FetchError.html">
+   Class: FetchError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="classes/thing_thing.ThingExpectedError.html">
+   Class: ThingExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="classes/thing_thing.ValidPropertyUrlExpectedError.html">
+   Class: ValidPropertyUrlExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="classes/thing_thing.ValidThingUrlExpectedError.html">
+   Class: ValidThingUrlExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="classes/thing_thing.ValidValueUrlExpectedError.html">
+   Class: ValidValueUrlExpectedError
+  </a>
+ </li>
+</ul>
+
+  </div>
 </nav>
-          </div>
+            </div>
+            
           
 
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
-              
-
-<nav id="bd-toc-nav">
-    <ul class="nav section-nav flex-column">
-    
-    </ul>
-</nav>
-
-
-              
+            
           </div>
           
 
           
+          
+            
+          
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
+ 
+  <div class="related">
+  
+</div>
+
   
               <div>
                 
   <h1 id="search-documentation">Search</h1>
-  <div id="fallback" class="admonition warning">
-  <script>$('#fallback').hide();</script>
+  
+  <noscript>
+  <div class="admonition warning">
   <p>
     Please activate JavaScript to enable the search
     functionality.
   </p>
   </div>
+  </noscript>
+  
+  
   <p>
     Searching for multiple words only shows matches that contain
     all words.
   </p>
+  
+  
   <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" />
+    <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
     <input type="submit" value="search" />
     <span id="search-progress" style="padding-left: 10px"></span>
   </form>
   
+  
+  
   <div id="search-results">
   
   </div>
+  
 
               </div>
               
 
-              
-              <div class='prev-next-bottom'>
-                
 
-              </div>
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
               
           </main>
           
 
       </div>
     </div>
-
-    
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    <footer class="footer">
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
-    <p>
-          &copy; Copyright 2021 Inrupt Inc.<br/>
-    </p>
+    
+    <div class="footer-item">
+      <div class="container">
+      <p>&copy; 2021 Inrupt Inc. </p>
+</div>
+    </div>
+    
   </div>
 </footer>
   </body>

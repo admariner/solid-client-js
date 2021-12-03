@@ -1,0 +1,963 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Module: thing/build &#8212; Inrupt solid-client API Documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
+    <link rel="stylesheet" href="../_static/css/inrupt.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Module: thing/get" href="thing_get.html" />
+    <link rel="prev" title="Module: thing/add" href="thing_add.html" />
+  
+  <meta name="robots" content="index" />
+  
+
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+      
+      <link rel="icon" sizes="16x16" href="https://docs.inrupt.com/inrupt_stickers_v2-03.png">
+      
+    
+
+    <!-- Google Analytics -->
+    
+
+  <script type="text/javascript"
+ src="https://inrupt.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-egccmf/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=41592d74"></script>
+<script type="text/javascript">
+ window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+   fieldValues: {
+     description: 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/modules/thing_build/ \n'
+   }
+ });
+</script>
+
+  <!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function () {
+    if (navigator.doNotTrack && navigator.doNotTrack === "1") {
+      return;
+    }
+    var u = "https://inrupt.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.type = 'text/javascript'; g.async = true; g.src = '//cdn.matomo.cloud/inrupt.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    <!-- Override navbar-logo -->
+
+   <a class="navbar-brand" href="https://inrupt.com/">
+      <img src="https://docs.inrupt.com/inrupt-logo-small.svg" class="logo" alt="Inrupt logo">
+   </a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class=" collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <!-- Override navbar-nav -->
+
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/">Docs Home</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/ess/latest/">Enterprise Solid Server</a>
+         </li>
+         <li class="nav-item"><a class="nav-link" href="#">Developer Tools</a>
+            <ul class="nav-children">
+               <li class="nav-item nav-childitem">
+                  <a href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/">JavaScript Client Libraries</a>
+               </li>
+               <li class="nav-item nav-childitem">
+                  <a href="https://docs.inrupt.com/developer-tools/javascript/react-sdk/">Solid React SDK</a>
+               </li>
+            </ul>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/user-interface/podbrowser/">PodBrowser</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/pod-spaces/">Pod Spaces</a>
+         </li>
+            <li class="nav-item"><a class="nav-link" href="#">API</a>
+                 <ul class="nav-children">
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client/" >solid-client (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-authn-browser/" >solid-client-authn-browser (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-authn-node/">solid-client-authn-node (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-notifications/">solid-client-notifications (JS)</a>
+                    </li>
+                 </ul>
+            </li></ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://inrupt.atlassian.net/servicedesk" rel="noopener" target="_blank" title="Support Desk">
+            <span><i class="fas fa-tools"></i></span>
+            <label class="sr-only">Support Desk</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://forum.solidproject.org/" rel="noopener" target="_blank" title="Solid forum">
+            <span><i class="fas fa-users"></i></span>
+            <label class="sr-only">Solid forum</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://inrupt.com/blog" rel="noopener" target="_blank" title="Inrupt Blog">
+            <span><i class="fas fa-blog"></i></span>
+            <label class="sr-only">Inrupt Blog</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+     <p class="caption">
+       <a class="reference internal" href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client">Inrupt solid-client API</a>
+     </p>
+     
+
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="access_universal.html">
+   Module: access/universal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_acl.html">
+   Module: acl/acl
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_agent.html">
+   Module: acl/agent
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_class.html">
+   Module: acl/class
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_group.html">
+   Module: acl/group
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_mock.html">
+   Module: acl/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_acp.html">
+   Module: acp/acp
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_control.html">
+   Module: acp/control
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_mock.html">
+   Module: acp/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_policy.html">
+   Module: acp/policy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_rule.html">
+   Module: acp/rule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="formats.html">
+   Module: formats
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="interfaces.html">
+   Module: interfaces
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="profile_jwks.html">
+   Module: profile/jwks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="profile_webid.html">
+   Module: profile/webid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rdfjs.html">
+   Module: rdfjs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_file.html">
+   Module: resource/file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_mock.html">
+   Module: resource/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_resource.html">
+   Module: resource/resource
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_solidDataset.html">
+   Module: resource/solidDataset
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_add.html">
+   Module: thing/add
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Module: thing/build
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_get.html">
+   Module: thing/get
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_mock.html">
+   Module: thing/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_remove.html">
+   Module: thing/remove
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_set.html">
+   Module: thing/set
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_thing.html">
+   Module: thing/thing
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../interfaces/access_universal.Access.html">
+   Interface: Access
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/interfaces.SolidClientError.html">
+   Class: SolidClientError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/resource_resource.FetchError.html">
+   Class: FetchError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ThingExpectedError.html">
+   Class: ThingExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidPropertyUrlExpectedError.html">
+   Class: ValidPropertyUrlExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidThingUrlExpectedError.html">
+   Class: ValidThingUrlExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidValueUrlExpectedError.html">
+   Class: ValidValueUrlExpectedError
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#type-aliases">
+     Type aliases
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Type aliases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#thingbuilder">
+     ThingBuilder
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#type-parameters">
+       Type parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#type-declaration">
+       Type declaration
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#defined-in">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#buildthing">
+     buildThing
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parameters">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#returns">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Defined in
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Defined in
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Defined in
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id12">
+       Defined in
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id13">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+ 
+  <div class="related">
+  
+</div>
+
+  
+              <div>
+                
+  <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / thing/build</p>
+<section class="tex2jax_ignore mathjax_ignore" id="module-thing-build">
+<h1>Module: thing/build<a class="headerlink" href="#module-thing-build" title="Permalink to this headline">¶</a></h1>
+<section id="table-of-contents">
+<h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<section id="type-aliases">
+<h3>Type aliases<a class="headerlink" href="#type-aliases" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a></p></li>
+</ul>
+</section>
+<section id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="thing_build.html#buildthing">buildThing</a></p></li>
+</ul>
+</section>
+</section>
+<section id="id1">
+<h2>Type aliases<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<section id="thingbuilder">
+<h3>ThingBuilder<a class="headerlink" href="#thingbuilder" title="Permalink to this headline">¶</a></h3>
+<p>Ƭ <strong>ThingBuilder</strong>&lt;<code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;: <code class="docutils literal notranslate"><span class="pre">Object</span></code></p>
+<p>A Fluent interface to build a <a class="reference external" href="interfaces.html#thing">Thing</a>.</p>
+<p>Add, replace or remove property values using consecutive calls to <code class="docutils literal notranslate"><span class="pre">.add*()</span></code>,
+<code class="docutils literal notranslate"><span class="pre">.set*()</span></code> and <code class="docutils literal notranslate"><span class="pre">.remove*()</span></code>, then finally generate a <a class="reference external" href="interfaces.html#thing">Thing</a> with the given
+properties using <code class="docutils literal notranslate"><span class="pre">.build()</span></code>.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
+<section id="type-parameters">
+<h4>Type parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
+<td class="text-align:left"><p>extends <a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="type-declaration">
+<h4>Type declaration<a class="headerlink" href="#type-declaration" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addBoolean</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">boolean</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addDate</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Date</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addDatetime</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Date</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addDecimal</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">number</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addInteger</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">number</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addIri</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addLiteral</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Literal</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addNamedNode</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">NamedNode</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addStringEnglish</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addStringNoLocale</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addTerm</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Quad_Object</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addTime</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Time</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addUrl</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Adder</span></code>&lt;<a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeBoolean</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">boolean</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeDate</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Date</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeDatetime</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Date</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeDecimal</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">number</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeInteger</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">number</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeIri</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeLiteral</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Literal</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeNamedNode</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">NamedNode</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeStringEnglish</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeStringNoLocale</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeTime</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Time</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeUrl</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Remover</span></code>&lt;<a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setBoolean</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">boolean</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setDate</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Date</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setDatetime</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Date</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setDecimal</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">number</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setInteger</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">number</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setIri</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setLiteral</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Literal</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setNamedNode</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">NamedNode</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setStringEnglish</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setStringNoLocale</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setTerm</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Quad_Object</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setTime</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">Time</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setUrl</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Setter</span></code>&lt;<a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a>, <code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">addStringWithLocale</span></code></p></td>
+<td class="text-align:left"><p>(<code class="docutils literal notranslate"><span class="pre">property</span></code>: <code class="docutils literal notranslate"><span class="pre">string</span></code> | <a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a>, <code class="docutils literal notranslate"><span class="pre">value</span></code>: <code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">locale</span></code>: <code class="docutils literal notranslate"><span class="pre">string</span></code>) =&gt; <a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">build</span></code></p></td>
+<td class="text-align:left"><p>() =&gt; <code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeAll</span></code></p></td>
+<td class="text-align:left"><p>(<code class="docutils literal notranslate"><span class="pre">property</span></code>: <code class="docutils literal notranslate"><span class="pre">string</span></code> | <a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a>) =&gt; <a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">removeStringWithLocale</span></code></p></td>
+<td class="text-align:left"><p>(<code class="docutils literal notranslate"><span class="pre">property</span></code>: <code class="docutils literal notranslate"><span class="pre">string</span></code> | <a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a>, <code class="docutils literal notranslate"><span class="pre">value</span></code>: <code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">locale</span></code>: <code class="docutils literal notranslate"><span class="pre">string</span></code>) =&gt; <a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setStringWithLocale</span></code></p></td>
+<td class="text-align:left"><p>(<code class="docutils literal notranslate"><span class="pre">property</span></code>: <code class="docutils literal notranslate"><span class="pre">string</span></code> | <a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a>, <code class="docutils literal notranslate"><span class="pre">value</span></code>: <code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">locale</span></code>: <code class="docutils literal notranslate"><span class="pre">string</span></code>) =&gt; <a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="defined-in">
+<h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/build.ts#L113">src/thing/build.ts:113</a></p>
+</section>
+</section>
+</section>
+<section id="id2">
+<h2>Functions<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<section id="buildthing">
+<h3>buildThing<a class="headerlink" href="#buildthing" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>buildThing</strong>(<code class="docutils literal notranslate"><span class="pre">init</span></code>): <a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<a class="reference external" href="interfaces.html#thinglocal"><code class="docutils literal notranslate"><span class="pre">ThingLocal</span></code></a>&gt;</p>
+<p>Modify a <a class="reference external" href="interfaces.html#thing">Thing</a>, setting multiple properties in a single expresssion.</p>
+<p>For example, you can initialise several properties of a given Thing as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>const me = buildThing(createThing({ name: &quot;profile-vincent&quot; }))
+  .addUrl(rdf.type, schema.Person)
+  .addStringNoLocale(schema.givenName, &quot;Vincent&quot;)
+  .build();
+</pre></div>
+</div>
+<p>Take note of the final call to <code class="docutils literal notranslate"><span class="pre">.build()</span></code> to obtain the actual Thing.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
+<section id="parameters">
+<h4>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">init</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thinglocal"><code class="docutils literal notranslate"><span class="pre">ThingLocal</span></code></a></p></td>
+<td class="text-align:left"><p>A Thing to modify.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="returns">
+<h4>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<a class="reference external" href="interfaces.html#thinglocal"><code class="docutils literal notranslate"><span class="pre">ThingLocal</span></code></a>&gt;</p>
+<p>a <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>, a Fluent API that allows you to set multiple properties in a single expression.</p>
+</section>
+<section id="id3">
+<h4>Defined in<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/build.ts#L187">src/thing/build.ts:187</a></p>
+<p>▸ <strong>buildThing</strong>(<code class="docutils literal notranslate"><span class="pre">init</span></code>): <a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<a class="reference external" href="interfaces.html#thingpersisted"><code class="docutils literal notranslate"><span class="pre">ThingPersisted</span></code></a>&gt;</p>
+<p>Modify a <a class="reference external" href="interfaces.html#thing">Thing</a>, setting multiple properties in a single expresssion.</p>
+<p>For example, you can initialise several properties of a given Thing as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>const me = buildThing(createThing({ url: &quot;https://example.pod/profile#vincent&quot; }))
+  .addUrl(rdf.type, schema.Person)
+  .addStringNoLocale(schema.givenName, &quot;Vincent&quot;)
+  .build();
+</pre></div>
+</div>
+<p>Take note of the final call to <code class="docutils literal notranslate"><span class="pre">.build()</span></code> to obtain the actual Thing.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
+</section>
+<section id="id4">
+<h4>Parameters<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">init</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thingpersisted"><code class="docutils literal notranslate"><span class="pre">ThingPersisted</span></code></a></p></td>
+<td class="text-align:left"><p>A Thing to modify.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id5">
+<h4>Returns<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<a class="reference external" href="interfaces.html#thingpersisted"><code class="docutils literal notranslate"><span class="pre">ThingPersisted</span></code></a>&gt;</p>
+<p>a <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>, a Fluent API that allows you to set multiple properties in a single expression.</p>
+</section>
+<section id="id6">
+<h4>Defined in<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/build.ts#L204">src/thing/build.ts:204</a></p>
+<p>▸ <strong>buildThing</strong>(<code class="docutils literal notranslate"><span class="pre">init</span></code>): <a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<a class="reference external" href="interfaces.html#thinglocal"><code class="docutils literal notranslate"><span class="pre">ThingLocal</span></code></a>&gt;</p>
+<p>Create a <a class="reference external" href="interfaces.html#thing">Thing</a>, setting multiple properties in a single expresssion.</p>
+<p>For example, you can create a new Thing and initialise several properties as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>const me = buildThing({ name: &quot;profile-vincent&quot; })
+  .addUrl(rdf.type, schema.Person)
+  .addStringNoLocale(schema.givenName, &quot;Vincent&quot;)
+  .build();
+</pre></div>
+</div>
+<p>Take note of the final call to <code class="docutils literal notranslate"><span class="pre">.build()</span></code> to obtain the actual Thing.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
+</section>
+<section id="id7">
+<h4>Parameters<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">init</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="thing_thing.html#createthinglocaloptions"><code class="docutils literal notranslate"><span class="pre">CreateThingLocalOptions</span></code></a></p></td>
+<td class="text-align:left"><p>Options used to initialise a new Thing.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id8">
+<h4>Returns<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<a class="reference external" href="interfaces.html#thinglocal"><code class="docutils literal notranslate"><span class="pre">ThingLocal</span></code></a>&gt;</p>
+<p>a <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>, a Fluent API that allows you to set multiple properties in a single expression.</p>
+</section>
+<section id="id9">
+<h4>Defined in<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/build.ts#L221">src/thing/build.ts:221</a></p>
+<p>▸ <strong>buildThing</strong>(<code class="docutils literal notranslate"><span class="pre">init</span></code>): <a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<a class="reference external" href="interfaces.html#thingpersisted"><code class="docutils literal notranslate"><span class="pre">ThingPersisted</span></code></a>&gt;</p>
+<p>Create a <a class="reference external" href="interfaces.html#thing">Thing</a>, setting multiple properties in a single expresssion.</p>
+<p>For example, you can create a new Thing and initialise several properties as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>const me = buildThing({ url: &quot;https://example.pod/profile#vincent&quot; })
+  .addUrl(rdf.type, schema.Person)
+  .addStringNoLocale(schema.givenName, &quot;Vincent&quot;)
+  .build();
+</pre></div>
+</div>
+<p>Take note of the final call to <code class="docutils literal notranslate"><span class="pre">.build()</span></code> to obtain the actual Thing.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
+</section>
+<section id="id10">
+<h4>Parameters<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">init</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="thing_thing.html#createthingpersistedoptions"><code class="docutils literal notranslate"><span class="pre">CreateThingPersistedOptions</span></code></a></p></td>
+<td class="text-align:left"><p>Optionally pass an existing <a class="reference external" href="interfaces.html#thing">Thing</a> to modify the properties of. If left empty, <code class="docutils literal notranslate"><span class="pre">buildThing</span></code> will initialise a new Thing.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id11">
+<h4>Returns<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<a class="reference external" href="interfaces.html#thingpersisted"><code class="docutils literal notranslate"><span class="pre">ThingPersisted</span></code></a>&gt;</p>
+<p>a <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>, a Fluent API that allows you to set multiple properties in a single expression.</p>
+</section>
+<section id="id12">
+<h4>Defined in<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/build.ts#L240">src/thing/build.ts:240</a></p>
+<p>▸ <strong>buildThing</strong>(): <a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<a class="reference external" href="interfaces.html#thinglocal"><code class="docutils literal notranslate"><span class="pre">ThingLocal</span></code></a>&gt;</p>
+<p>Create a <a class="reference external" href="interfaces.html#thing">Thing</a>, setting multiple properties in a single expresssion.</p>
+<p>For example, you can create a new Thing and initialise several properties as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>const me = buildThing()
+  .addUrl(rdf.type, schema.Person)
+  .addStringNoLocale(schema.givenName, &quot;Vincent&quot;)
+  .build();
+</pre></div>
+</div>
+<p>Take note of the final call to <code class="docutils literal notranslate"><span class="pre">.build()</span></code> to obtain the actual Thing.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.9.0</p>
+</section>
+<section id="id13">
+<h4>Returns<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="thing_build.html#thingbuilder"><code class="docutils literal notranslate"><span class="pre">ThingBuilder</span></code></a>&lt;<a class="reference external" href="interfaces.html#thinglocal"><code class="docutils literal notranslate"><span class="pre">ThingLocal</span></code></a>&gt;</p>
+<p>a <a class="reference external" href="thing_build.html#thingbuilder">ThingBuilder</a>, a Fluent API that allows you to set multiple properties in a single expression.</p>
+</section>
+<section id="id14">
+<h4>Defined in<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/build.ts#L258">src/thing/build.ts:258</a></p>
+</section>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+
+
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="thing_add.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-title">Module: thing/add</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="thing_get.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-title">Module: thing/get</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <div class="container">
+      <p>&copy; 2021 Inrupt Inc. </p>
+</div>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

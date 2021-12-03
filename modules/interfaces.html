@@ -4,10 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Module: interfaces &#8212; Inrupt solid-client API Documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -19,115 +21,167 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" href="../_static/css/inrupt.css" type="text/css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Module: resource/file" href="resource_file.html" />
-    <link rel="prev" title="Module: acl/mock" href="acl_mock.html" />
+    <link rel="next" title="Module: profile/jwks" href="profile_jwks.html" />
+    <link rel="prev" title="Module: formats" href="formats.html" />
   
-    <meta name="robots" content="index" />
+  <meta name="robots" content="index" />
   
-
-  <link rel="shortcut icon" href="https://docs.inrupt.com/inrupt_stickers_v2-03.png" type="image/png" />
-  <script type="text/javascript" src="https://inrupt.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-egccmf/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=41592d74"></script>
-
-  <script type="text/javascript">
-      window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
-         fieldValues: {
-            description : 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/modules/interfaces/ \n' 
-         }
-      });
-   </script>
-
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      if (navigator.doNotTrack && navigator.doNotTrack === "1") {
-        return;
-      }
-      var u="https://inrupt.matomo.cloud/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '3']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/inrupt.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
 
   
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+      
+      <link rel="icon" sizes="16x16" href="https://docs.inrupt.com/inrupt_stickers_v2-03.png">
+      
+    
+
+    <!-- Google Analytics -->
+    
+
+  <script type="text/javascript"
+ src="https://inrupt.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-egccmf/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=41592d74"></script>
+<script type="text/javascript">
+ window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+   fieldValues: {
+     description: 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/modules/interfaces/ \n'
+   }
+ });
+</script>
+
+  <!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function () {
+    if (navigator.doNotTrack && navigator.doNotTrack === "1") {
+      return;
+    }
+    var u = "https://inrupt.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.type = 'text/javascript'; g.async = true; g.src = '//cdn.matomo.cloud/inrupt.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
-<div class="container-xl">
+    <div class="container-fluid" id="banner"></div>
 
-    <a class="navbar-brand" href="https://inrupt.com/">
-      <img src="https://docs.inrupt.com/inrupt-logo-small.svg" class="logo" alt="logo">
-    </a>
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+  <div id="navbar-start">
+    
+    <!-- Override navbar-logo -->
 
-    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
-      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.inrupt.com/">Docs Home</a>
-          </li>
-         
-          <li class="nav-item">
-             <a class="nav-link" href="https://docs.inrupt.com/ess/latest/">Enterprise Solid Server</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Developer Tools</a>
-               <ul class="nav-children">
-                     <li class="nav-item nav-childitem">
-                        <a href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/">JavaScript Client Libraries</a>
-                     </li>
-                     <li class="nav-item nav-childitem">
-                        <a href="https://docs.inrupt.com/developer-tools/javascript/react-sdk">Solid React SDK</a>
-                     </li>
-               </ul>
-          </li>
-          <li class="nav-item">
-               <a class="nav-link" href="https://docs.inrupt.com/user-interface/podbrowser/">PodBrowser</a>
-          </li>
-          <li class="nav-item">
-             <a  class="nav-link" href="https://docs.inrupt.com/pod-spaces/">Pod Spaces</a>
-          </li>
-      </ul>
+   <a class="navbar-brand" href="https://inrupt.com/">
+      <img src="https://docs.inrupt.com/inrupt-logo-small.svg" class="logo" alt="Inrupt logo">
+   </a>
+    
+  </div>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  
+  <div id="navbar-collapsible" class=" collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
       
+      <div class="navbar-center-item">
+        <!-- Override navbar-nav -->
 
-      <div class="social">
-         <a class="social-icon" href="https://twitter.com/inrupt" target="_blank" title="Inrupt on Twitter" aria-label="Inrupt on Twitter"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
-         <a class="social-icon" href="https://www.linkedin.com/company/inrupt/" target="_blank" title="Inrupt on LinkedIn" aria-label="Inrupt on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-         <a class="social-icon" href="https://forum.solidproject.org/" target="_blank" title="Solid Forum" aria-label="Solid forum"> <i class="fas fa-users" aria-hidden="true"></i></a>
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/">Docs Home</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/ess/latest/">Enterprise Solid Server</a>
+         </li>
+         <li class="nav-item"><a class="nav-link" href="#">Developer Tools</a>
+            <ul class="nav-children">
+               <li class="nav-item nav-childitem">
+                  <a href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/">JavaScript Client Libraries</a>
+               </li>
+               <li class="nav-item nav-childitem">
+                  <a href="https://docs.inrupt.com/developer-tools/javascript/react-sdk/">Solid React SDK</a>
+               </li>
+            </ul>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/user-interface/podbrowser/">PodBrowser</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/pod-spaces/">Pod Spaces</a>
+         </li>
+            <li class="nav-item"><a class="nav-link" href="#">API</a>
+                 <ul class="nav-children">
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client/" >solid-client (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-authn-browser/" >solid-client-authn-browser (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-authn-node/">solid-client-authn-node (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-notifications/">solid-client-notifications (JS)</a>
+                    </li>
+                 </ul>
+            </li></ul>
       </div>
       
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://inrupt.atlassian.net/servicedesk" rel="noopener" target="_blank" title="Support Desk">
+            <span><i class="fas fa-tools"></i></span>
+            <label class="sr-only">Support Desk</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://forum.solidproject.org/" rel="noopener" target="_blank" title="Solid forum">
+            <span><i class="fas fa-users"></i></span>
+            <label class="sr-only">Solid forum</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://inrupt.com/blog" rel="noopener" target="_blank" title="Inrupt Blog">
+            <span><i class="fas fa-blog"></i></span>
+            <label class="sr-only">Inrupt Blog</label>
+          </a>
+        </li>
+      </ul>
+      </div>
       
     </div>
+  </div>
 </div>
     </nav>
     
@@ -135,339 +189,551 @@
     <div class="container-xl">
       <div class="row">
           
-          <div class="col-12 col-md-3 bd-sidebar">
-
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form>
-
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-
-
-  
-  
-
-  
-  <ul class="nav bd-sidenav">
+     <p class="caption">
+       <a class="reference internal" href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client">Inrupt solid-client API</a>
+     </p>
      
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_acl.html">Module: acl/acl</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_agent.html">Module: acl/agent</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_class.html">Module: acl/class</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_group.html">Module: acl/group</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_mock.html">Module: acl/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item active toctree-l1"> <a class="nav-link" href="">Module: interfaces</a>
-             
-             
-               
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="resource_file.html">Module: resource/file</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="resource_mock.html">Module: resource/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="resource_resource.html">Module: resource/resource</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="resource_soliddataset.html">Module: resource/solidDataset</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_add.html">Module: thing/add</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_get.html">Module: thing/get</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_mock.html">Module: thing/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_remove.html">Module: thing/remove</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_set.html">Module: thing/set</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_thing.html">Module: thing/thing</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/interfaces.solidclienterror.html">Class: SolidClientError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/resource_resource.fetcherror.html">Class: FetchError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.thingexpectederror.html">Class: ThingExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.validpropertyurlexpectederror.html">Class: ValidPropertyUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.validthingurlexpectederror.html">Class: ValidThingUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.validvalueurlexpectederror.html">Class: ValidValueUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-  </ul>
-</div>
+
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="access_universal.html">
+   Module: access/universal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_acl.html">
+   Module: acl/acl
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_agent.html">
+   Module: acl/agent
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_class.html">
+   Module: acl/class
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_group.html">
+   Module: acl/group
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_mock.html">
+   Module: acl/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_acp.html">
+   Module: acp/acp
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_control.html">
+   Module: acp/control
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_mock.html">
+   Module: acp/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_policy.html">
+   Module: acp/policy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_rule.html">
+   Module: acp/rule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="formats.html">
+   Module: formats
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Module: interfaces
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="profile_jwks.html">
+   Module: profile/jwks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="profile_webid.html">
+   Module: profile/webid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rdfjs.html">
+   Module: rdfjs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_file.html">
+   Module: resource/file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_mock.html">
+   Module: resource/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_resource.html">
+   Module: resource/resource
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_solidDataset.html">
+   Module: resource/solidDataset
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_add.html">
+   Module: thing/add
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_build.html">
+   Module: thing/build
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_get.html">
+   Module: thing/get
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_mock.html">
+   Module: thing/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_remove.html">
+   Module: thing/remove
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_set.html">
+   Module: thing/set
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_thing.html">
+   Module: thing/thing
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../interfaces/access_universal.Access.html">
+   Interface: Access
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/interfaces.SolidClientError.html">
+   Class: SolidClientError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/resource_resource.FetchError.html">
+   Class: FetchError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ThingExpectedError.html">
+   Class: ThingExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidPropertyUrlExpectedError.html">
+   Class: ValidPropertyUrlExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidThingUrlExpectedError.html">
+   Class: ValidThingUrlExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidValueUrlExpectedError.html">
+   Class: ValidValueUrlExpectedError
+  </a>
+ </li>
+</ul>
+
+  </div>
 </nav>
-          </div>
+            </div>
+            
           
 
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
               
+              <div class="toc-item">
+                
 <div class="tocsection onthispage pt-5 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
 
 <nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#classes">
+     Classes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#type-aliases">
+     Type aliases
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Type aliases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#effectiveaccess">
+     EffectiveAccess
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#table-of-contents" class="nav-link">Table of contents</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#classes" class="nav-link">Classes</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#type-aliases" class="nav-link">Type aliases</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#functions" class="nav-link">Functions</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#id1" class="nav-link">Type aliases</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#file" class="nav-link">File</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#resource" class="nav-link">Resource</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#soliddataset" class="nav-link">SolidDataset</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#thing" class="nav-link">Thing</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#thinglocal" class="nav-link">ThingLocal</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#thingpersisted" class="nav-link">ThingPersisted</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#uploadrequestinit" class="nav-link">UploadRequestInit</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#url" class="nav-link">Url</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#urlstring" class="nav-link">UrlString</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#webid" class="nav-link">WebId</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#withresourceinfo" class="nav-link">WithResourceInfo</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#type-declaration" class="nav-link">Type declaration:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#withserverresourceinfo" class="nav-link">WithServerResourceInfo</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#id2" class="nav-link">Functions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#hasresourceinfo" class="nav-link">hasResourceInfo</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#type-parameters" class="nav-link">Type parameters:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#parameters" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#hasserverresourceinfo" class="nav-link">hasServerResourceInfo</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id3" class="nav-link">Type parameters:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id4" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#type-declaration">
+       Type declaration
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#defined-in">
+       Defined in
+      </a>
+     </li>
     </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#file">
+     File
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jwk">
+     Jwk
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jwks">
+     Jwks
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Type declaration
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linkedresourceurlall">
+     LinkedResourceUrlAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resource">
+     Resource
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#soliddataset">
+     SolidDataset
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#thing">
+     Thing
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#thinglocal">
+     ThingLocal
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#thingpersisted">
+     ThingPersisted
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uploadrequestinit">
+     UploadRequestInit
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id12">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#url">
+     Url
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id13">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#urlstring">
+     UrlString
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#webid">
+     WebId
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#withresourceinfo">
+     WithResourceInfo
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id16">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#withserverresourceinfo">
+     WithServerResourceInfo
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id17">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id18">
+   Functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hasresourceinfo">
+     hasResourceInfo
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#type-parameters">
+       Type parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parameters">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#returns">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id19">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hasserverresourceinfo">
+     hasServerResourceInfo
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id20">
+       Type parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id21">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id22">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id23">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
-
-
+              </div>
               
+              <div class="toc-item">
+                
+              </div>
+              
+            
           </div>
           
 
           
+          
+            
+          
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
+ 
+  <div class="related">
+  
+</div>
+
   
               <div>
                 
   <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / interfaces</p>
-<div class="section" id="module-interfaces">
+<section class="tex2jax_ignore mathjax_ignore" id="module-interfaces">
 <h1>Module: interfaces<a class="headerlink" href="#module-interfaces" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="table-of-contents">
+<section id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="classes">
+<section id="classes">
 <h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><a class="reference internal" href="../classes/interfaces.solidclienterror.html"><span class="doc std std-doc">SolidClientError</span></a></p></li>
+<li><p><a class="reference internal" href="../classes/interfaces.SolidClientError.html"><span class="doc std std-doc">SolidClientError</span></a></p></li>
 </ul>
-</div>
-<div class="section" id="type-aliases">
+</section>
+<section id="type-aliases">
 <h3>Type aliases<a class="headerlink" href="#type-aliases" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
+<li><p><a class="reference external" href="interfaces.html#effectiveaccess">EffectiveAccess</a></p></li>
 <li><p><a class="reference external" href="interfaces.html#file">File</a></p></li>
+<li><p><a class="reference external" href="interfaces.html#jwk">Jwk</a></p></li>
+<li><p><a class="reference external" href="interfaces.html#jwks">Jwks</a></p></li>
+<li><p><a class="reference external" href="interfaces.html#linkedresourceurlall">LinkedResourceUrlAll</a></p></li>
 <li><p><a class="reference external" href="interfaces.html#resource">Resource</a></p></li>
 <li><p><a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a></p></li>
 <li><p><a class="reference external" href="interfaces.html#thing">Thing</a></p></li>
@@ -480,119 +746,249 @@
 <li><p><a class="reference external" href="interfaces.html#withresourceinfo">WithResourceInfo</a></p></li>
 <li><p><a class="reference external" href="interfaces.html#withserverresourceinfo">WithServerResourceInfo</a></p></li>
 </ul>
-</div>
-<div class="section" id="functions">
+</section>
+<section id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="interfaces.html#hasresourceinfo">hasResourceInfo</a></p></li>
 <li><p><a class="reference external" href="interfaces.html#hasserverresourceinfo">hasServerResourceInfo</a></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="id1">
+</section>
+</section>
+<section id="id1">
 <h2>Type aliases<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="file">
+<section id="effectiveaccess">
+<h3>EffectiveAccess<a class="headerlink" href="#effectiveaccess" title="Permalink to this headline">¶</a></h3>
+<p>Ƭ <strong>EffectiveAccess</strong>: <code class="docutils literal notranslate"><span class="pre">Object</span></code></p>
+<p>What access the current user has to a particular Resource, and what access everybody has.</p>
+<p>Note that access for everybody is at the time of writing not returned by
+servers implementing Access Control Policies, so the <code class="docutils literal notranslate"><span class="pre">public</span></code> property is
+only available on servers that implement Web Access Control.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.7.0</p>
+<section id="type-declaration">
+<h4>Type declaration<a class="headerlink" href="#type-declaration" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">public?</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Object</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">public.append</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">boolean</span></code></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">public.read</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">boolean</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">public.write</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">boolean</span></code></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">user</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Object</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">user.append</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">boolean</span></code></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">user.read</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">boolean</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">user.write</span></code></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">boolean</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="defined-in">
+<h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L125">src/interfaces.ts:125</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="file">
 <h3>File<a class="headerlink" href="#file" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>File</strong>: Blob</p>
+<p>Ƭ <strong>File</strong>: <code class="docutils literal notranslate"><span class="pre">Blob</span></code></p>
 <p>A File is anything stored on a Pod in a format that solid-client does not have special affordances for, e.g. an image, or a plain JSON file.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L50">src/interfaces.ts:50</a></p>
-</div>
+<section id="id2">
+<h4>Defined in<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L51">src/interfaces.ts:51</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="resource">
+<section id="jwk">
+<h3>Jwk<a class="headerlink" href="#jwk" title="Permalink to this headline">¶</a></h3>
+<p>Ƭ <strong>Jwk</strong>: <code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">string</span></code>&gt;</p>
+<p>A JSON data structure that represents a set of public keys as a JSON object.
+See https://datatracker.ietf.org/doc/html/rfc7517 for details.</p>
+<section id="id3">
+<h4>Defined in<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L57">src/interfaces.ts:57</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="jwks">
+<h3>Jwks<a class="headerlink" href="#jwks" title="Permalink to this headline">¶</a></h3>
+<p>Ƭ <strong>Jwks</strong>: <code class="docutils literal notranslate"><span class="pre">Object</span></code></p>
+<p>A JSON data structure holding a list of JWK.</p>
+<section id="id4">
+<h4>Type declaration<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">keys</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#jwk"><code class="docutils literal notranslate"><span class="pre">Jwk</span></code></a>[]</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id5">
+<h4>Defined in<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L62">src/interfaces.ts:62</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="linkedresourceurlall">
+<h3>LinkedResourceUrlAll<a class="headerlink" href="#linkedresourceurlall" title="Permalink to this headline">¶</a></h3>
+<p>Ƭ <strong>LinkedResourceUrlAll</strong>: <code class="docutils literal notranslate"><span class="pre">Record</span></code>&lt;<a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <code class="docutils literal notranslate"><span class="pre">string</span></code>, <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>[]&gt;</p>
+<p>URLs of Resources linked to a given Resource, indexed by relation.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.7.0</p>
+<section id="id6">
+<h4>Defined in<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L143">src/interfaces.ts:143</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="resource">
 <h3>Resource<a class="headerlink" href="#resource" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>Resource</strong>: <a class="reference external" href="interfaces.html#soliddataset"><em>SolidDataset</em></a> | <a class="reference external" href="interfaces.html#file"><em>File</em></a></p>
+<p>Ƭ <strong>Resource</strong>: <a class="reference external" href="interfaces.html#soliddataset"><code class="docutils literal notranslate"><span class="pre">SolidDataset</span></code></a> | <a class="reference external" href="interfaces.html#file"><code class="docutils literal notranslate"><span class="pre">File</span></code></a></p>
 <p>A Resource is something that can be fetched from a Pod - either structured data in a <a class="reference external" href="interfaces.html#soliddataset">SolidDataset</a>, or any other <a class="reference external" href="interfaces.html#file">File</a>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L55">src/interfaces.ts:55</a></p>
-</div>
+<section id="id7">
+<h4>Defined in<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L69">src/interfaces.ts:69</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="soliddataset">
+<section id="soliddataset">
 <h3>SolidDataset<a class="headerlink" href="#soliddataset" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>SolidDataset</strong>: DatasetCore</p>
+<p>Ƭ <strong>SolidDataset</strong>: <code class="docutils literal notranslate"><span class="pre">ImmutableDataset</span></code></p>
 <p>A SolidDataset represents all Quads from a single Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L45">src/interfaces.ts:45</a></p>
-</div>
+<section id="id8">
+<h4>Defined in<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L46">src/interfaces.ts:46</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="thing">
+<section id="thing">
 <h3>Thing<a class="headerlink" href="#thing" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>Thing</strong>: DatasetCore &amp; { <code class="docutils literal notranslate"><span class="pre">internal_url</span></code>: <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>  } | { <code class="docutils literal notranslate"><span class="pre">internal_localSubject</span></code>: LocalNode  }</p>
+<p>Ƭ <strong>Thing</strong>: <code class="docutils literal notranslate"><span class="pre">Subject</span></code></p>
 <p>A Thing represents all Quads with a given Subject URL and a given Named
 Graph, from a single Resource.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L61">src/interfaces.ts:61</a></p>
-</div>
+<section id="id9">
+<h4>Defined in<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L75">src/interfaces.ts:75</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="thinglocal">
+<section id="thinglocal">
 <h3>ThingLocal<a class="headerlink" href="#thinglocal" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>ThingLocal</strong>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a> &amp; { <code class="docutils literal notranslate"><span class="pre">internal_localSubject</span></code>: LocalNode  }</p>
+<p>Ƭ <strong>ThingLocal</strong>: <a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a> &amp; { <code class="docutils literal notranslate"><span class="pre">url</span></code>: <code class="docutils literal notranslate"><span class="pre">LocalNodeIri</span></code>  }</p>
 <p>A <a class="reference external" href="interfaces.html#thing">Thing</a> whose full Subject URL will be determined when it is persisted.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L70">src/interfaces.ts:70</a></p>
-</div>
+<section id="id10">
+<h4>Defined in<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L84">src/interfaces.ts:84</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="thingpersisted">
+<section id="thingpersisted">
 <h3>ThingPersisted<a class="headerlink" href="#thingpersisted" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>ThingPersisted</strong>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a> &amp; { <code class="docutils literal notranslate"><span class="pre">internal_url</span></code>: <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>  }</p>
+<p>Ƭ <strong>ThingPersisted</strong>: <a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a> &amp; { <code class="docutils literal notranslate"><span class="pre">url</span></code>: <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>  }</p>
 <p>A <a class="reference external" href="interfaces.html#thing">Thing</a> for which we know what the full Subject URL is.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L66">src/interfaces.ts:66</a></p>
-</div>
+<section id="id11">
+<h4>Defined in<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L80">src/interfaces.ts:80</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="uploadrequestinit">
+<section id="uploadrequestinit">
 <h3>UploadRequestInit<a class="headerlink" href="#uploadrequestinit" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>UploadRequestInit</strong>: <em>Omit</em>&lt;RequestInit, <em>method</em>&gt;</p>
+<p>Ƭ <strong>UploadRequestInit</strong>: <code class="docutils literal notranslate"><span class="pre">Omit</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">RequestInit</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;method&quot;</span></code>&gt;</p>
 <p>A RequestInit restriction where the method is set by the library</p>
 <p>Please note that this function is still experimental and can change in a non-major release.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L201">src/interfaces.ts:201</a></p>
-</div>
+<section id="id12">
+<h4>Defined in<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L245">src/interfaces.ts:245</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="url">
+<section id="url">
 <h3>Url<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>Url</strong>: NamedNode</p>
+<p>Ƭ <strong>Url</strong>: <code class="docutils literal notranslate"><span class="pre">NamedNode</span></code></p>
 <p>Alias to indicate where we expect to be given a URL represented as an RDF/JS NamedNode.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L28">src/interfaces.ts:28</a></p>
-</div>
+<section id="id13">
+<h4>Defined in<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L29">src/interfaces.ts:29</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="urlstring">
+<section id="urlstring">
 <h3>UrlString<a class="headerlink" href="#urlstring" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>UrlString</strong>: <em>string</em></p>
+<p>Ƭ <strong>UrlString</strong>: <code class="docutils literal notranslate"><span class="pre">string</span></code></p>
 <p>Alias to indicate where we expect to be given a URL.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L34">src/interfaces.ts:34</a></p>
-</div>
+<section id="id14">
+<h4>Defined in<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L35">src/interfaces.ts:35</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="webid">
+<section id="webid">
 <h3>WebId<a class="headerlink" href="#webid" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>WebId</strong>: <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p>
+<p>Ƭ <strong>WebId</strong>: <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p>
 <p>Alias to indicate where we expect to be given a WebId.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L40">src/interfaces.ts:40</a></p>
-</div>
+<section id="id15">
+<h4>Defined in<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L41">src/interfaces.ts:41</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="withresourceinfo">
+<section id="withresourceinfo">
 <h3>WithResourceInfo<a class="headerlink" href="#withresourceinfo" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>WithResourceInfo</strong>: <em>object</em></p>
+<p>Ƭ <strong>WithResourceInfo</strong>: <code class="docutils literal notranslate"><span class="pre">Object</span></code></p>
 <p>Data that was sent to a Pod includes this metadata describing its relation to the Pod Resource it was sent to.</p>
 <p><strong>Do not read these properties directly</strong>; their internal representation may change at any time.
-Instead, use functions such as <a class="reference external" href="resource_resource.html#getsourceurl">getSourceUrl</a>, <a class="reference external" href="resource_resource.html#israwdata">isRawData</a> and <a class="reference external" href="resource_resource.html#getcontenttype">getContentType</a>.</p>
-<div class="section" id="type-declaration">
-<h4>Type declaration:<a class="headerlink" href="#type-declaration" title="Permalink to this headline">¶</a></h4>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L87">src/interfaces.ts:87</a></p>
-</div>
-</div>
+Instead, use functions such as <a class="reference external" href="resource_resource.html#getsourceurl">getSourceUrl</a>, [[isRawData]] and <a class="reference external" href="resource_resource.html#getcontenttype">getContentType</a>.</p>
+<section id="id16">
+<h4>Defined in<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L102">src/interfaces.ts:102</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="withserverresourceinfo">
+<section id="withserverresourceinfo">
 <h3>WithServerResourceInfo<a class="headerlink" href="#withserverresourceinfo" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>WithServerResourceInfo</strong>: <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a> &amp; {  }</p>
+<p>Ƭ <strong>WithServerResourceInfo</strong>: <a class="reference external" href="interfaces.html#withresourceinfo"><code class="docutils literal notranslate"><span class="pre">WithResourceInfo</span></code></a> &amp; {  }</p>
 <p>Data that was fetched from a Pod includes this metadata describing its relation to the Pod Resource it was fetched from.</p>
 <p><strong>Do not read these properties directly</strong>; their internal representation may change at any time.
-Instead, use functions such as <a class="reference external" href="resource_resource.html#getsourceurl">getSourceUrl</a>, <a class="reference external" href="resource_resource.html#israwdata">isRawData</a> and <a class="reference external" href="resource_resource.html#getcontenttype">getContentType</a>.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L107">src/interfaces.ts:107</a></p>
-</div>
-</div>
-<div class="section" id="id2">
-<h2>Functions<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="hasresourceinfo">
+Instead, use functions such as <a class="reference external" href="resource_resource.html#getsourceurl">getSourceUrl</a>, [[isRawData]] and <a class="reference external" href="resource_resource.html#getcontenttype">getContentType</a>.</p>
+<section id="id17">
+<h4>Defined in<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L151">src/interfaces.ts:151</a></p>
+</section>
+</section>
+</section>
+<section id="id18">
+<h2>Functions<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<section id="hasresourceinfo">
 <h3>hasResourceInfo<a class="headerlink" href="#hasresourceinfo" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>hasResourceInfo</strong>&lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: T): resource is T &amp; WithResourceInfo</p>
+<p>▸ <strong>hasResourceInfo</strong>&lt;<code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>): resource is T &amp; WithResourceInfo</p>
 <p>Verify whether a given SolidDataset includes metadata about where it was sent to.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 0.2.0</p>
-<div class="section" id="type-parameters">
-<h4>Type parameters:<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
+<section id="type-parameters">
+<h4>Type parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -603,9 +999,9 @@ Instead, use functions such as <a class="reference external" href="resource_reso
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="parameters">
-<h4>Parameters:<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="parameters">
+<h4>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -614,23 +1010,29 @@ Instead, use functions such as <a class="reference external" href="resource_reso
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">resource</span></code></p></td>
-<td class="text-align:left"><p>T</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> resource is T &amp; WithResourceInfo</p>
+</section>
+<section id="returns">
+<h4>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h4>
+<p>resource is T &amp; WithResourceInfo</p>
 <p>True if <code class="docutils literal notranslate"><span class="pre">dataset</span></code> includes metadata about the Resource it was sent to, false if not.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L155">src/interfaces.ts:155</a></p>
-</div>
-</div>
+</section>
+<section id="id19">
+<h4>Defined in<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L199">src/interfaces.ts:199</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="hasserverresourceinfo">
+<section id="hasserverresourceinfo">
 <h3>hasServerResourceInfo<a class="headerlink" href="#hasserverresourceinfo" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>hasServerResourceInfo</strong>&lt;T&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>: T): resource is T &amp; WithResourceInfo &amp; object</p>
+<p>▸ <strong>hasServerResourceInfo</strong>&lt;<code class="docutils literal notranslate"><span class="pre">T</span></code>&gt;(<code class="docutils literal notranslate"><span class="pre">resource</span></code>): resource is T &amp; WithResourceInfo &amp; object</p>
 <p>Verify whether a given SolidDataset includes metadata about where it was retrieved from.</p>
 <p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 0.6.0</p>
-<div class="section" id="id3">
-<h4>Type parameters:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<section id="id20">
+<h4>Type parameters<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -641,9 +1043,9 @@ Instead, use functions such as <a class="reference external" href="resource_reso
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="id4">
-<h4>Parameters:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="id21">
+<h4>Parameters<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -652,45 +1054,62 @@ Instead, use functions such as <a class="reference external" href="resource_reso
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">resource</span></code></p></td>
-<td class="text-align:left"><p>T</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">T</span></code></p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> resource is T &amp; WithResourceInfo &amp; object</p>
+</section>
+<section id="id22">
+<h4>Returns<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
+<p>resource is T &amp; WithResourceInfo &amp; object</p>
 <p>True if <code class="docutils literal notranslate"><span class="pre">dataset</span></code> includes metadata about the Resource it was retrieved from, false if not.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/interfaces.ts#L172">src/interfaces.ts:172</a></p>
-</div>
-</div>
-</div>
-</div>
+</section>
+<section id="id23">
+<h4>Defined in<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/interfaces.ts#L216">src/interfaces.ts:216</a></p>
+</section>
+</section>
+</section>
+</section>
 
 
               </div>
               
 
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="acl_mock.html" title="previous page">Module: acl/mock</a>
-    <a class='right-next' id="next-link" href="resource_file.html" title="next page">Module: resource/file</a>
 
-              </div>
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="formats.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-title">Module: formats</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="profile_jwks.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-title">Module: profile/jwks</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
 
       </div>
     </div>
-
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    <footer class="footer">
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
-    <p>
-          &copy; Copyright 2021 Inrupt Inc.<br/>
-    </p>
+    
+    <div class="footer-item">
+      <div class="container">
+      <p>&copy; 2021 Inrupt Inc. </p>
+</div>
+    </div>
+    
   </div>
 </footer>
   </body>

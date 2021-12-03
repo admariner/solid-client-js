@@ -4,10 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Module: thing/get &#8212; Inrupt solid-client API Documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -19,115 +21,167 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" href="../_static/css/inrupt.css" type="text/css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Module: thing/mock" href="thing_mock.html" />
-    <link rel="prev" title="Module: thing/add" href="thing_add.html" />
+    <link rel="prev" title="Module: thing/build" href="thing_build.html" />
   
-    <meta name="robots" content="index" />
+  <meta name="robots" content="index" />
   
-
-  <link rel="shortcut icon" href="https://docs.inrupt.com/inrupt_stickers_v2-03.png" type="image/png" />
-  <script type="text/javascript" src="https://inrupt.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-egccmf/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=41592d74"></script>
-
-  <script type="text/javascript">
-      window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
-         fieldValues: {
-            description : 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/modules/thing_get/ \n' 
-         }
-      });
-   </script>
-
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      if (navigator.doNotTrack && navigator.doNotTrack === "1") {
-        return;
-      }
-      var u="https://inrupt.matomo.cloud/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '3']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/inrupt.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
 
   
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+      
+      <link rel="icon" sizes="16x16" href="https://docs.inrupt.com/inrupt_stickers_v2-03.png">
+      
+    
+
+    <!-- Google Analytics -->
+    
+
+  <script type="text/javascript"
+ src="https://inrupt.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-egccmf/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=41592d74"></script>
+<script type="text/javascript">
+ window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+   fieldValues: {
+     description: 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/modules/thing_get/ \n'
+   }
+ });
+</script>
+
+  <!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function () {
+    if (navigator.doNotTrack && navigator.doNotTrack === "1") {
+      return;
+    }
+    var u = "https://inrupt.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.type = 'text/javascript'; g.async = true; g.src = '//cdn.matomo.cloud/inrupt.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
-<div class="container-xl">
+    <div class="container-fluid" id="banner"></div>
 
-    <a class="navbar-brand" href="https://inrupt.com/">
-      <img src="https://docs.inrupt.com/inrupt-logo-small.svg" class="logo" alt="logo">
-    </a>
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+  <div id="navbar-start">
+    
+    <!-- Override navbar-logo -->
 
-    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
-      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.inrupt.com/">Docs Home</a>
-          </li>
-         
-          <li class="nav-item">
-             <a class="nav-link" href="https://docs.inrupt.com/ess/latest/">Enterprise Solid Server</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Developer Tools</a>
-               <ul class="nav-children">
-                     <li class="nav-item nav-childitem">
-                        <a href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/">JavaScript Client Libraries</a>
-                     </li>
-                     <li class="nav-item nav-childitem">
-                        <a href="https://docs.inrupt.com/developer-tools/javascript/react-sdk">Solid React SDK</a>
-                     </li>
-               </ul>
-          </li>
-          <li class="nav-item">
-               <a class="nav-link" href="https://docs.inrupt.com/user-interface/podbrowser/">PodBrowser</a>
-          </li>
-          <li class="nav-item">
-             <a  class="nav-link" href="https://docs.inrupt.com/pod-spaces/">Pod Spaces</a>
-          </li>
-      </ul>
+   <a class="navbar-brand" href="https://inrupt.com/">
+      <img src="https://docs.inrupt.com/inrupt-logo-small.svg" class="logo" alt="Inrupt logo">
+   </a>
+    
+  </div>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  
+  <div id="navbar-collapsible" class=" collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
       
+      <div class="navbar-center-item">
+        <!-- Override navbar-nav -->
 
-      <div class="social">
-         <a class="social-icon" href="https://twitter.com/inrupt" target="_blank" title="Inrupt on Twitter" aria-label="Inrupt on Twitter"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
-         <a class="social-icon" href="https://www.linkedin.com/company/inrupt/" target="_blank" title="Inrupt on LinkedIn" aria-label="Inrupt on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-         <a class="social-icon" href="https://forum.solidproject.org/" target="_blank" title="Solid Forum" aria-label="Solid forum"> <i class="fas fa-users" aria-hidden="true"></i></a>
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/">Docs Home</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/ess/latest/">Enterprise Solid Server</a>
+         </li>
+         <li class="nav-item"><a class="nav-link" href="#">Developer Tools</a>
+            <ul class="nav-children">
+               <li class="nav-item nav-childitem">
+                  <a href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/">JavaScript Client Libraries</a>
+               </li>
+               <li class="nav-item nav-childitem">
+                  <a href="https://docs.inrupt.com/developer-tools/javascript/react-sdk/">Solid React SDK</a>
+               </li>
+            </ul>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/user-interface/podbrowser/">PodBrowser</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/pod-spaces/">Pod Spaces</a>
+         </li>
+            <li class="nav-item"><a class="nav-link" href="#">API</a>
+                 <ul class="nav-children">
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client/" >solid-client (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-authn-browser/" >solid-client-authn-browser (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-authn-node/">solid-client-authn-node (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-notifications/">solid-client-notifications (JS)</a>
+                    </li>
+                 </ul>
+            </li></ul>
       </div>
       
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://inrupt.atlassian.net/servicedesk" rel="noopener" target="_blank" title="Support Desk">
+            <span><i class="fas fa-tools"></i></span>
+            <label class="sr-only">Support Desk</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://forum.solidproject.org/" rel="noopener" target="_blank" title="Solid forum">
+            <span><i class="fas fa-users"></i></span>
+            <label class="sr-only">Solid forum</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://inrupt.com/blog" rel="noopener" target="_blank" title="Inrupt Blog">
+            <span><i class="fas fa-blog"></i></span>
+            <label class="sr-only">Inrupt Blog</label>
+          </a>
+        </li>
+      </ul>
+      </div>
       
     </div>
+  </div>
 </div>
     </nav>
     
@@ -135,388 +189,733 @@
     <div class="container-xl">
       <div class="row">
           
-          <div class="col-12 col-md-3 bd-sidebar">
-
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form>
-
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-
-
-  
-  
-
-  
-  <ul class="nav bd-sidenav">
+     <p class="caption">
+       <a class="reference internal" href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client">Inrupt solid-client API</a>
+     </p>
      
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_acl.html">Module: acl/acl</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_agent.html">Module: acl/agent</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_class.html">Module: acl/class</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_group.html">Module: acl/group</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_mock.html">Module: acl/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="interfaces.html">Module: interfaces</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="resource_file.html">Module: resource/file</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="resource_mock.html">Module: resource/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="resource_resource.html">Module: resource/resource</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="resource_soliddataset.html">Module: resource/solidDataset</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_add.html">Module: thing/add</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item active toctree-l1"> <a class="nav-link" href="">Module: thing/get</a>
-             
-             
-               
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_mock.html">Module: thing/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_remove.html">Module: thing/remove</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_set.html">Module: thing/set</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_thing.html">Module: thing/thing</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/interfaces.solidclienterror.html">Class: SolidClientError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/resource_resource.fetcherror.html">Class: FetchError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.thingexpectederror.html">Class: ThingExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.validpropertyurlexpectederror.html">Class: ValidPropertyUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.validthingurlexpectederror.html">Class: ValidThingUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.validvalueurlexpectederror.html">Class: ValidValueUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-  </ul>
-</div>
+
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="access_universal.html">
+   Module: access/universal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_acl.html">
+   Module: acl/acl
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_agent.html">
+   Module: acl/agent
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_class.html">
+   Module: acl/class
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_group.html">
+   Module: acl/group
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_mock.html">
+   Module: acl/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_acp.html">
+   Module: acp/acp
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_control.html">
+   Module: acp/control
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_mock.html">
+   Module: acp/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_policy.html">
+   Module: acp/policy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_rule.html">
+   Module: acp/rule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="formats.html">
+   Module: formats
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="interfaces.html">
+   Module: interfaces
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="profile_jwks.html">
+   Module: profile/jwks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="profile_webid.html">
+   Module: profile/webid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rdfjs.html">
+   Module: rdfjs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_file.html">
+   Module: resource/file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_mock.html">
+   Module: resource/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_resource.html">
+   Module: resource/resource
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_solidDataset.html">
+   Module: resource/solidDataset
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_add.html">
+   Module: thing/add
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_build.html">
+   Module: thing/build
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Module: thing/get
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_mock.html">
+   Module: thing/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_remove.html">
+   Module: thing/remove
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_set.html">
+   Module: thing/set
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_thing.html">
+   Module: thing/thing
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../interfaces/access_universal.Access.html">
+   Interface: Access
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/interfaces.SolidClientError.html">
+   Class: SolidClientError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/resource_resource.FetchError.html">
+   Class: FetchError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ThingExpectedError.html">
+   Class: ThingExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidPropertyUrlExpectedError.html">
+   Class: ValidPropertyUrlExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidThingUrlExpectedError.html">
+   Class: ValidThingUrlExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidValueUrlExpectedError.html">
+   Class: ValidValueUrlExpectedError
+  </a>
+ </li>
+</ul>
+
+  </div>
 </nav>
-          </div>
+            </div>
+            
           
 
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
               
+              <div class="toc-item">
+                
 <div class="tocsection onthispage pt-5 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
 
 <nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getboolean">
+     getBoolean
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#table-of-contents" class="nav-link">Table of contents</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#functions" class="nav-link">Functions</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#id1" class="nav-link">Functions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getboolean" class="nav-link">getBoolean</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#parameters" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getbooleanall" class="nav-link">getBooleanAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id2" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getdatetime" class="nav-link">getDatetime</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id3" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getdatetimeall" class="nav-link">getDatetimeAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id4" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getdecimal" class="nav-link">getDecimal</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id5" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getdecimalall" class="nav-link">getDecimalAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id6" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getinteger" class="nav-link">getInteger</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id7" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getintegerall" class="nav-link">getIntegerAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id8" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getstringbylocaleall" class="nav-link">getStringByLocaleAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id9" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getstringnolocale" class="nav-link">getStringNoLocale</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id10" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getstringnolocaleall" class="nav-link">getStringNoLocaleAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id11" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getstringwithlocale" class="nav-link">getStringWithLocale</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id12" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getstringwithlocaleall" class="nav-link">getStringWithLocaleAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id13" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#geturl" class="nav-link">getUrl</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id14" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#geturlall" class="nav-link">getUrlAll</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id15" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parameters">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#returns">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#defined-in">
+       Defined in
+      </a>
+     </li>
     </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getbooleanall">
+     getBooleanAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getdate">
+     getDate
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getdateall">
+     getDateAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getdatetime">
+     getDatetime
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id12">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id13">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getdatetimeall">
+     getDatetimeAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id16">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getdecimal">
+     getDecimal
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id17">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id18">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id19">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getdecimalall">
+     getDecimalAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id20">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id21">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id22">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getinteger">
+     getInteger
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id23">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id24">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id25">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getintegerall">
+     getIntegerAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id26">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id27">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id28">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringbylocaleall">
+     getStringByLocaleAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id29">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id30">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id31">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringenglish">
+     getStringEnglish
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id32">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id33">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id34">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringenglishall">
+     getStringEnglishAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id35">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id36">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id37">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringnolocale">
+     getStringNoLocale
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id38">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id39">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id40">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringnolocaleall">
+     getStringNoLocaleAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id41">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id42">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id43">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringwithlocale">
+     getStringWithLocale
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id44">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id45">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id46">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getstringwithlocaleall">
+     getStringWithLocaleAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id47">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id48">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id49">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gettime">
+     getTime
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id50">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id51">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id52">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gettimeall">
+     getTimeAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id53">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id54">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id55">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geturl">
+     getUrl
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id56">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id57">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id58">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geturlall">
+     getUrlAll
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id59">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id60">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id61">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
-
-
+              </div>
               
+              <div class="toc-item">
+                
+              </div>
+              
+            
           </div>
           
 
           
+          
+            
+          
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
+ 
+  <div class="related">
+  
+</div>
+
   
               <div>
                 
   <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / thing/get</p>
-<div class="section" id="module-thing-get">
+<section class="tex2jax_ignore mathjax_ignore" id="module-thing-get">
 <h1>Module: thing/get<a class="headerlink" href="#module-thing-get" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="table-of-contents">
+<section id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="functions">
+<section id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="thing_get.html#getboolean">getBoolean</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#getbooleanall">getBooleanAll</a></p></li>
+<li><p><a class="reference external" href="thing_get.html#getdate">getDate</a></p></li>
+<li><p><a class="reference external" href="thing_get.html#getdateall">getDateAll</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#getdatetime">getDatetime</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#getdatetimeall">getDatetimeAll</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#getdecimal">getDecimal</a></p></li>
@@ -524,25 +923,29 @@
 <li><p><a class="reference external" href="thing_get.html#getinteger">getInteger</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#getintegerall">getIntegerAll</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#getstringbylocaleall">getStringByLocaleAll</a></p></li>
+<li><p><a class="reference external" href="thing_get.html#getstringenglish">getStringEnglish</a></p></li>
+<li><p><a class="reference external" href="thing_get.html#getstringenglishall">getStringEnglishAll</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#getstringnolocale">getStringNoLocale</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#getstringnolocaleall">getStringNoLocaleAll</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#getstringwithlocale">getStringWithLocale</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#getstringwithlocaleall">getStringWithLocaleAll</a></p></li>
+<li><p><a class="reference external" href="thing_get.html#gettime">getTime</a></p></li>
+<li><p><a class="reference external" href="thing_get.html#gettimeall">getTimeAll</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#geturl">getUrl</a></p></li>
 <li><p><a class="reference external" href="thing_get.html#geturlall">getUrlAll</a></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="id1">
+</section>
+</section>
+<section id="id1">
 <h2>Functions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="getboolean">
+<section id="getboolean">
 <h3>getBoolean<a class="headerlink" href="#getboolean" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getBoolean</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <em>boolean</em> | <em>null</em></p>
+<p>▸ <strong>getBoolean</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">boolean</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>Returns the boolean value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
 If the Property is not present or its value is not of type boolean, returns null.
 If the Property has multiple boolean values, returns one of its values.</p>
-<div class="section" id="parameters">
-<h4>Parameters:<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
+<section id="parameters">
+<h4>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -552,29 +955,35 @@ If the Property has multiple boolean values, returns one of its values.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read a boolean value from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose boolean value to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>boolean</em> | <em>null</em></p>
+</section>
+<section id="returns">
+<h4>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">boolean</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>A boolean value for the given Property if present, or null if the Property is not present or the value is not of type boolean.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L99">src/thing/get.ts:99</a></p>
-</div>
-</div>
+</section>
+<section id="defined-in">
+<h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L123">src/thing/get.ts:123</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getbooleanall">
+<section id="getbooleanall">
 <h3>getBooleanAll<a class="headerlink" href="#getbooleanall" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getBooleanAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <em>boolean</em>[]</p>
+<p>▸ <strong>getBooleanAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">boolean</span></code>[]</p>
 <p>Returns the boolean values of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
 If the Property is not present, returns an empty array.
 If the Property’s value is not of type boolean, omits that value in the array.</p>
-<div class="section" id="id2">
-<h4>Parameters:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<section id="id2">
+<h4>Parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -584,29 +993,36 @@ If the Property’s value is not of type boolean, omits that value in the array.
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read the boolean values from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose boolean values to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>boolean</em>[]</p>
+</section>
+<section id="id3">
+<h4>Returns<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">boolean</span></code>[]</p>
 <p>An array of boolean values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L126">src/thing/get.ts:126</a></p>
-</div>
-</div>
+</section>
+<section id="id4">
+<h4>Defined in<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L150">src/thing/get.ts:150</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getdatetime">
-<h3>getDatetime<a class="headerlink" href="#getdatetime" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getDatetime</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): Date | <em>null</em></p>
-<p>Returns the datetime value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
-If the Property is not present or its value is not of type datetime, returns null.
-If the Property has multiple datetime values, returns one of its values.</p>
-<div class="section" id="id3">
-<h4>Parameters:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<section id="getdate">
+<h3>getDate<a class="headerlink" href="#getdate" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>getDate</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">Date</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
+<p>Returns the date value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
+If the Property is not present or its value is not of type date, returns null.
+If the Property has multiple date values, returns one of its values.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.10.0</p>
+<section id="id5">
+<h4>Parameters<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -616,29 +1032,112 @@ If the Property has multiple datetime values, returns one of its values.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
+<td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read a date value from.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
+<td class="text-align:left"><p>The Property whose date value to return.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id6">
+<h4>Returns<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Date</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
+<p>A date value for the given Property if present, or null if the Property is not present or the value is not of type date.</p>
+</section>
+<section id="id7">
+<h4>Defined in<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L228">src/thing/get.ts:228</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="getdateall">
+<h3>getDateAll<a class="headerlink" href="#getdateall" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>getDateAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">Date</span></code>[]</p>
+<p>Returns the date values of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
+If the Property is not present, returns an empty array.
+If the Property’s value is not of type date, omits that value in the array.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.10.0</p>
+<section id="id8">
+<h4>Parameters<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
+<td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read the date values from.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
+<td class="text-align:left"><p>The Property whose date values to return.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id9">
+<h4>Returns<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Date</span></code>[]</p>
+<p>An array of date values for the given Property.</p>
+</section>
+<section id="id10">
+<h4>Defined in<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L250">src/thing/get.ts:250</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="getdatetime">
+<h3>getDatetime<a class="headerlink" href="#getdatetime" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>getDatetime</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">Date</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
+<p>Returns the datetime value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
+If the Property is not present or its value is not of type datetime, returns null.
+If the Property has multiple datetime values, returns one of its values.</p>
+<section id="id11">
+<h4>Parameters<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read a datetime value from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose datetime value to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> Date | <em>null</em></p>
+</section>
+<section id="id12">
+<h4>Returns<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Date</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>A datetime value for the given Property if present, or null if the Property is not present or the value is not of type datetime.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L151">src/thing/get.ts:151</a></p>
-</div>
-</div>
+</section>
+<section id="id13">
+<h4>Defined in<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L175">src/thing/get.ts:175</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getdatetimeall">
+<section id="getdatetimeall">
 <h3>getDatetimeAll<a class="headerlink" href="#getdatetimeall" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getDatetimeAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): Date[]</p>
+<p>▸ <strong>getDatetimeAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">Date</span></code>[]</p>
 <p>Returns the datetime values of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
 If the Property is not present, returns an empty array.
 If the Property’s value is not of type datetime, omits that value in the array.</p>
-<div class="section" id="id4">
-<h4>Parameters:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<section id="id14">
+<h4>Parameters<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -648,29 +1147,35 @@ If the Property’s value is not of type datetime, omits that value in the array
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read the datetime values from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose datetime values to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> Date[]</p>
+</section>
+<section id="id15">
+<h4>Returns<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Date</span></code>[]</p>
 <p>An array of datetime values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L178">src/thing/get.ts:178</a></p>
-</div>
-</div>
+</section>
+<section id="id16">
+<h4>Defined in<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L202">src/thing/get.ts:202</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getdecimal">
+<section id="getdecimal">
 <h3>getDecimal<a class="headerlink" href="#getdecimal" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getDecimal</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <em>number</em> | <em>null</em></p>
+<p>▸ <strong>getDecimal</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">number</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>Returns the decimal value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
 If the Property is not present or its value is not of type decimal, returns null.
 If the Property has multiple decimal values, returns one of its values.</p>
-<div class="section" id="id5">
-<h4>Parameters:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<section id="id17">
+<h4>Parameters<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -680,29 +1185,35 @@ If the Property has multiple decimal values, returns one of its values.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read a decimal value from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose decimal value to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>number</em> | <em>null</em></p>
+</section>
+<section id="id18">
+<h4>Returns<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">number</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>A decimal value for the given Property if present, or null if the Property is not present or the value is not of type decimal.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L203">src/thing/get.ts:203</a></p>
-</div>
-</div>
+</section>
+<section id="id19">
+<h4>Defined in<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L316">src/thing/get.ts:316</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getdecimalall">
+<section id="getdecimalall">
 <h3>getDecimalAll<a class="headerlink" href="#getdecimalall" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getDecimalAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <em>number</em>[]</p>
+<p>▸ <strong>getDecimalAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">number</span></code>[]</p>
 <p>Returns the decimal values of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
 If the Property is not present, returns an empty array.
 If the Property’s value is not of type decimal, omits that value in the array.</p>
-<div class="section" id="id6">
-<h4>Parameters:<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<section id="id20">
+<h4>Parameters<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -712,29 +1223,35 @@ If the Property’s value is not of type decimal, omits that value in the array.
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read the decimal values from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose decimal values to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>number</em>[]</p>
+</section>
+<section id="id21">
+<h4>Returns<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">number</span></code>[]</p>
 <p>An array of decimal values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L230">src/thing/get.ts:230</a></p>
-</div>
-</div>
+</section>
+<section id="id22">
+<h4>Defined in<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L343">src/thing/get.ts:343</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getinteger">
+<section id="getinteger">
 <h3>getInteger<a class="headerlink" href="#getinteger" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getInteger</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <em>number</em> | <em>null</em></p>
+<p>▸ <strong>getInteger</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">number</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>Returns the integer value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
 If the Property is not present or its value is not of type integer, returns null.
 If the Property has multiple integer values, returns one of its values.</p>
-<div class="section" id="id7">
-<h4>Parameters:<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<section id="id23">
+<h4>Parameters<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -744,29 +1261,35 @@ If the Property has multiple integer values, returns one of its values.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read an integer value from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose integer value to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>number</em> | <em>null</em></p>
+</section>
+<section id="id24">
+<h4>Returns<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">number</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>A integer value for the given Property if present, or null if the Property is not present or the value is not of type datetime.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L255">src/thing/get.ts:255</a></p>
-</div>
-</div>
+</section>
+<section id="id25">
+<h4>Defined in<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L368">src/thing/get.ts:368</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getintegerall">
+<section id="getintegerall">
 <h3>getIntegerAll<a class="headerlink" href="#getintegerall" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getIntegerAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <em>number</em>[]</p>
+<p>▸ <strong>getIntegerAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">number</span></code>[]</p>
 <p>Returns the integer values of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
 If the Property is not present, returns an empty array.
 If the Property’s value is not of type integer, omits that value in the array.</p>
-<div class="section" id="id8">
-<h4>Parameters:<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<section id="id26">
+<h4>Parameters<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -776,28 +1299,34 @@ If the Property’s value is not of type integer, omits that value in the array.
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read the integer values from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose integer values to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>number</em>[]</p>
+</section>
+<section id="id27">
+<h4>Returns<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">number</span></code>[]</p>
 <p>An array of integer values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L282">src/thing/get.ts:282</a></p>
-</div>
-</div>
+</section>
+<section id="id28">
+<h4>Defined in<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L395">src/thing/get.ts:395</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getstringbylocaleall">
+<section id="getstringbylocaleall">
 <h3>getStringByLocaleAll<a class="headerlink" href="#getstringbylocaleall" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getStringByLocaleAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <em>Map</em>&lt;string, string[]&gt;</p>
+<p>▸ <strong>getStringByLocaleAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">Map</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">string</span></code>[]&gt;</p>
 <p>Returns all localized string values mapped by the locales for the specified property from the
 specified <a class="reference external" href="interfaces.html#thing">Thing</a> (explicitly filters out non-language string literals).</p>
-<div class="section" id="id9">
-<h4>Parameters:<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<section id="id29">
+<h4>Parameters<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -807,29 +1336,36 @@ specified <a class="reference external" href="interfaces.html#thing">Thing</a> (
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read the localised string values from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose localised string values to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Map</em>&lt;string, string[]&gt;</p>
+</section>
+<section id="id30">
+<h4>Returns<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Map</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">string</span></code>, <code class="docutils literal notranslate"><span class="pre">string</span></code>[]&gt;</p>
 <p>A Map of objects, keyed on locale with the value an array of string values (for that locale).</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L356">src/thing/get.ts:356</a></p>
-</div>
-</div>
+</section>
+<section id="id31">
+<h4>Defined in<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L518">src/thing/get.ts:518</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getstringnolocale">
-<h3>getStringNoLocale<a class="headerlink" href="#getstringnolocale" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getStringNoLocale</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <em>string</em> | <em>null</em></p>
-<p>Returns the string value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
-If the Property is not present or its value is not of type string, returns null.
-If the Property has multiple string values, returns one of its values.</p>
-<div class="section" id="id10">
-<h4>Parameters:<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<section id="getstringenglish">
+<h3>getStringEnglish<a class="headerlink" href="#getstringenglish" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>getStringEnglish</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">string</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
+<p>Returns the English (language tag “en”) string value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
+If the Property is not present as a string in English, returns null.
+If the Property has multiple English string values, returns one of its values.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.13.0</p>
+<section id="id32">
+<h4>Parameters<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -839,29 +1375,111 @@ If the Property has multiple string values, returns one of its values.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
+<td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read a localised string value from.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
+<td class="text-align:left"><p>The Property whose localised string value to return.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id33">
+<h4>Returns<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">string</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
+<p>An English string value for the given Property if present, or null otherwise.</p>
+</section>
+<section id="id34">
+<h4>Defined in<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L421">src/thing/get.ts:421</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="getstringenglishall">
+<h3>getStringEnglishAll<a class="headerlink" href="#getstringenglishall" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>getStringEnglishAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">string</span></code>[]</p>
+<p>Returns the English (language tag “en”) string values of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
+If the Property is not present, returns an empty array.
+If the Property’s value is not an English string, omits that value in the array.</p>
+<section id="id35">
+<h4>Parameters<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
+<td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read a localised string value from.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
+<td class="text-align:left"><p>The Property whose localised string value to return.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id36">
+<h4>Returns<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">string</span></code>[]</p>
+<p>An array of English string values for the given Property.</p>
+</section>
+<section id="id37">
+<h4>Defined in<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L470">src/thing/get.ts:470</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="getstringnolocale">
+<h3>getStringNoLocale<a class="headerlink" href="#getstringnolocale" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>getStringNoLocale</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">string</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
+<p>Returns the string value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
+If the Property is not present or its value is not of type string, returns null.
+If the Property has multiple string values, returns one of its values.</p>
+<section id="id38">
+<h4>Parameters<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read a string value from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose string value to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>string</em> | <em>null</em></p>
+</section>
+<section id="id39">
+<h4>Returns<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">string</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>A string value for the given Property if present, or null if the Property is not present or the value is not of type string.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L388">src/thing/get.ts:388</a></p>
-</div>
-</div>
+</section>
+<section id="id40">
+<h4>Defined in<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L545">src/thing/get.ts:545</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getstringnolocaleall">
+<section id="getstringnolocaleall">
 <h3>getStringNoLocaleAll<a class="headerlink" href="#getstringnolocaleall" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getStringNoLocaleAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <em>string</em>[]</p>
+<p>▸ <strong>getStringNoLocaleAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">string</span></code>[]</p>
 <p>Returns the string values of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
 If the Property is not present, returns an empty array.
 If the Property’s value is not of type string, omits that value in the array.</p>
-<div class="section" id="id11">
-<h4>Parameters:<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<section id="id41">
+<h4>Parameters<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -871,29 +1489,35 @@ If the Property’s value is not of type string, omits that value in the array.<
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read the string values from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose string values to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>string</em>[]</p>
+</section>
+<section id="id42">
+<h4>Returns<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">string</span></code>[]</p>
 <p>An array of string values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L411">src/thing/get.ts:411</a></p>
-</div>
-</div>
+</section>
+<section id="id43">
+<h4>Defined in<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L568">src/thing/get.ts:568</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getstringwithlocale">
+<section id="getstringwithlocale">
 <h3>getStringWithLocale<a class="headerlink" href="#getstringwithlocale" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getStringWithLocale</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>, <code class="docutils literal notranslate"><span class="pre">locale</span></code>: <em>string</em>): <em>string</em> | <em>null</em></p>
+<p>▸ <strong>getStringWithLocale</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>, <code class="docutils literal notranslate"><span class="pre">locale</span></code>): <code class="docutils literal notranslate"><span class="pre">string</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>Returns the localized string value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
 If the Property is not present as a string in the specified locale, returns null.
 If the Property has multiple string values for the specified locale, returns one of its values.</p>
-<div class="section" id="id12">
-<h4>Parameters:<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<section id="id44">
+<h4>Parameters<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -903,33 +1527,39 @@ If the Property has multiple string values for the specified locale, returns one
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read a localised string value from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose localised string value to return.</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">locale</span></code></p></td>
-<td class="text-align:left"><p><em>string</em></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p></td>
 <td class="text-align:left"><p>The desired locale for the string value.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>string</em> | <em>null</em></p>
+</section>
+<section id="id45">
+<h4>Returns<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">string</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>A localised string value for the given Property if present in the specified <code class="docutils literal notranslate"><span class="pre">locale</span></code>, or null otherwise.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L308">src/thing/get.ts:308</a></p>
-</div>
-</div>
+</section>
+<section id="id46">
+<h4>Defined in<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L438">src/thing/get.ts:438</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getstringwithlocaleall">
+<section id="getstringwithlocaleall">
 <h3>getStringWithLocaleAll<a class="headerlink" href="#getstringwithlocaleall" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getStringWithLocaleAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>, <code class="docutils literal notranslate"><span class="pre">locale</span></code>: <em>string</em>): <em>string</em>[]</p>
+<p>▸ <strong>getStringWithLocaleAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>, <code class="docutils literal notranslate"><span class="pre">locale</span></code>): <code class="docutils literal notranslate"><span class="pre">string</span></code>[]</p>
 <p>Returns the localized string values of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
 If the Property is not present, returns an empty array.
 If the Property’s value is not a string of the specified locale, omits that value in the array.</p>
-<div class="section" id="id13">
-<h4>Parameters:<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<section id="id47">
+<h4>Parameters<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -939,33 +1569,40 @@ If the Property’s value is not a string of the specified locale, omits that va
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read the localised string values from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose localised string values to return.</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">locale</span></code></p></td>
-<td class="text-align:left"><p><em>string</em></p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p></td>
 <td class="text-align:left"><p>The desired locale for the string values.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>string</em>[]</p>
+</section>
+<section id="id48">
+<h4>Returns<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">string</span></code>[]</p>
 <p>An array of localised string values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L335">src/thing/get.ts:335</a></p>
-</div>
-</div>
+</section>
+<section id="id49">
+<h4>Defined in<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L487">src/thing/get.ts:487</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="geturl">
-<h3>getUrl<a class="headerlink" href="#geturl" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getUrl</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <em>null</em></p>
-<p>Returns the URL value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
-If the Property is not present or its value is not of type URL, returns null.
-If the Property has multiple URL values, returns one of its URL values.</p>
-<div class="section" id="id14">
-<h4>Parameters:<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<section id="gettime">
+<h3>getTime<a class="headerlink" href="#gettime" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>getTime</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">Time</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
+<p>Returns the time value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
+If the Property is not present or its value is not of type time, returns null.
+If the Property has multiple time values, returns one of its values.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.10.0</p>
+<section id="id50">
+<h4>Parameters<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -975,29 +1612,112 @@ If the Property has multiple URL values, returns one of its URL values.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
+<td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read a time value from.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
+<td class="text-align:left"><p>The Property whose time value to return.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id51">
+<h4>Returns<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Time</span></code> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
+<p>A time value for the given Property if present, or null if the Property is not present or the value is not of type time.</p>
+</section>
+<section id="id52">
+<h4>Defined in<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L273">src/thing/get.ts:273</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="gettimeall">
+<h3>getTimeAll<a class="headerlink" href="#gettimeall" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>getTimeAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <code class="docutils literal notranslate"><span class="pre">Time</span></code>[]</p>
+<p>Returns the time values of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
+If the Property is not present, returns an empty array.
+If the Property’s value is not of type time, omits that value in the array.</p>
+<p><strong><code class="docutils literal notranslate"><span class="pre">since</span></code></strong> 1.10.0</p>
+<section id="id53">
+<h4>Parameters<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
+<td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read the time values from.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
+<td class="text-align:left"><p>The Property whose time values to return.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id54">
+<h4>Returns<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Time</span></code>[]</p>
+<p>An array of time values for the given Property.</p>
+</section>
+<section id="id55">
+<h4>Defined in<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L294">src/thing/get.ts:294</a></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="geturl">
+<h3>getUrl<a class="headerlink" href="#geturl" title="Permalink to this headline">¶</a></h3>
+<p>▸ <strong>getUrl</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
+<p>Returns the URL value of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
+If the Property is not present or its value is not of type URL, returns null.
+If the Property has multiple URL values, returns one of its URL values.</p>
+<section id="id56">
+<h4>Parameters<a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read a URL value from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose URL value to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <em>null</em></p>
+</section>
+<section id="id57">
+<h4>Returns<a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
 <p>A URL value for the given Property if present, or null if the Property is not present or the value is not of type URL.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L49">src/thing/get.ts:49</a></p>
-</div>
-</div>
+</section>
+<section id="id58">
+<h4>Defined in<a class="headerlink" href="#id58" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L69">src/thing/get.ts:69</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="geturlall">
+<section id="geturlall">
 <h3>getUrlAll<a class="headerlink" href="#geturlall" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getUrlAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>: <a class="reference external" href="interfaces.html#thing"><em>Thing</em></a>, <code class="docutils literal notranslate"><span class="pre">property</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>): <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
+<p>▸ <strong>getUrlAll</strong>(<code class="docutils literal notranslate"><span class="pre">thing</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>): <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>[]</p>
 <p>Returns the URL values of the specified Property from a <a class="reference external" href="interfaces.html#thing">Thing</a>.
 If the Property is not present, returns an empty array.
 If the Property’s value is not of type URL, omits that value in the array.</p>
-<div class="section" id="id15">
-<h4>Parameters:<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<section id="id59">
+<h4>Parameters<a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -1007,50 +1727,67 @@ If the Property’s value is not of type URL, omits that value in the array.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">thing</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><em>Thing</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#thing"><code class="docutils literal notranslate"><span class="pre">Thing</span></code></a></p></td>
 <td class="text-align:left"><p>The <a class="reference external" href="interfaces.html#thing">Thing</a> to read the URL values from.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">property</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The Property whose URL values to return.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>[]</p>
+</section>
+<section id="id60">
+<h4>Returns<a class="headerlink" href="#id60" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a>[]</p>
 <p>An array of URL values for the given Property.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/thing/get.ts#L76">src/thing/get.ts:76</a></p>
-</div>
-</div>
-</div>
-</div>
+</section>
+<section id="id61">
+<h4>Defined in<a class="headerlink" href="#id61" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/thing/get.ts#L96">src/thing/get.ts:96</a></p>
+</section>
+</section>
+</section>
+</section>
 
 
               </div>
               
 
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="thing_add.html" title="previous page">Module: thing/add</a>
-    <a class='right-next' id="next-link" href="thing_mock.html" title="next page">Module: thing/mock</a>
 
-              </div>
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="thing_build.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-title">Module: thing/build</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="thing_mock.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-title">Module: thing/mock</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
 
       </div>
     </div>
-
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    <footer class="footer">
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
-    <p>
-          &copy; Copyright 2021 Inrupt Inc.<br/>
-    </p>
+    
+    <div class="footer-item">
+      <div class="container">
+      <p>&copy; 2021 Inrupt Inc. </p>
+</div>
+    </div>
+    
   </div>
 </footer>
   </body>

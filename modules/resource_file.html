@@ -4,10 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Module: resource/file &#8212; Inrupt solid-client API Documentation</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -19,115 +21,167 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" href="../_static/css/inrupt.css" type="text/css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Module: resource/mock" href="resource_mock.html" />
-    <link rel="prev" title="Module: interfaces" href="interfaces.html" />
+    <link rel="prev" title="Module: rdfjs" href="rdfjs.html" />
   
-    <meta name="robots" content="index" />
+  <meta name="robots" content="index" />
   
-
-  <link rel="shortcut icon" href="https://docs.inrupt.com/inrupt_stickers_v2-03.png" type="image/png" />
-  <script type="text/javascript" src="https://inrupt.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-egccmf/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=41592d74"></script>
-
-  <script type="text/javascript">
-      window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
-         fieldValues: {
-            description : 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/modules/resource_file/ \n' 
-         }
-      });
-   </script>
-
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      if (navigator.doNotTrack && navigator.doNotTrack === "1") {
-        return;
-      }
-      var u="https://inrupt.matomo.cloud/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '3']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/inrupt.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <!-- End Matomo Code -->
 
   
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+      
+      <link rel="icon" sizes="16x16" href="https://docs.inrupt.com/inrupt_stickers_v2-03.png">
+      
+    
+
+    <!-- Google Analytics -->
+    
+
+  <script type="text/javascript"
+ src="https://inrupt.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-egccmf/b/24/a44af77267a987a660377e5c46e0fb64/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=41592d74"></script>
+<script type="text/javascript">
+ window.ATL_JQ_PAGE_PROPS = $.extend(window.ATL_JQ_PAGE_PROPS, {
+   fieldValues: {
+     description: 'On page: https://docs.inrupt.com/developer-tools/api/javascript/solid-client/modules/resource_file/ \n'
+   }
+ });
+</script>
+
+  <!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function () {
+    if (navigator.doNotTrack && navigator.doNotTrack === "1") {
+      return;
+    }
+    var u = "https://inrupt.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u + 'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.type = 'text/javascript'; g.async = true; g.src = '//cdn.matomo.cloud/inrupt.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+  
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
-<div class="container-xl">
+    <div class="container-fluid" id="banner"></div>
 
-    <a class="navbar-brand" href="https://inrupt.com/">
-      <img src="https://docs.inrupt.com/inrupt-logo-small.svg" class="logo" alt="logo">
-    </a>
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+  <div id="navbar-start">
+    
+    <!-- Override navbar-logo -->
 
-    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
-      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.inrupt.com/">Docs Home</a>
-          </li>
-         
-          <li class="nav-item">
-             <a class="nav-link" href="https://docs.inrupt.com/ess/latest/">Enterprise Solid Server</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Developer Tools</a>
-               <ul class="nav-children">
-                     <li class="nav-item nav-childitem">
-                        <a href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/">JavaScript Client Libraries</a>
-                     </li>
-                     <li class="nav-item nav-childitem">
-                        <a href="https://docs.inrupt.com/developer-tools/javascript/react-sdk">Solid React SDK</a>
-                     </li>
-               </ul>
-          </li>
-          <li class="nav-item">
-               <a class="nav-link" href="https://docs.inrupt.com/user-interface/podbrowser/">PodBrowser</a>
-          </li>
-          <li class="nav-item">
-             <a  class="nav-link" href="https://docs.inrupt.com/pod-spaces/">Pod Spaces</a>
-          </li>
-      </ul>
+   <a class="navbar-brand" href="https://inrupt.com/">
+      <img src="https://docs.inrupt.com/inrupt-logo-small.svg" class="logo" alt="Inrupt logo">
+   </a>
+    
+  </div>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  
+  <div id="navbar-collapsible" class=" collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
       
+      <div class="navbar-center-item">
+        <!-- Override navbar-nav -->
 
-      <div class="social">
-         <a class="social-icon" href="https://twitter.com/inrupt" target="_blank" title="Inrupt on Twitter" aria-label="Inrupt on Twitter"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
-         <a class="social-icon" href="https://www.linkedin.com/company/inrupt/" target="_blank" title="Inrupt on LinkedIn" aria-label="Inrupt on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-         <a class="social-icon" href="https://forum.solidproject.org/" target="_blank" title="Solid Forum" aria-label="Solid forum"> <i class="fas fa-users" aria-hidden="true"></i></a>
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/">Docs Home</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/ess/latest/">Enterprise Solid Server</a>
+         </li>
+         <li class="nav-item"><a class="nav-link" href="#">Developer Tools</a>
+            <ul class="nav-children">
+               <li class="nav-item nav-childitem">
+                  <a href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/">JavaScript Client Libraries</a>
+               </li>
+               <li class="nav-item nav-childitem">
+                  <a href="https://docs.inrupt.com/developer-tools/javascript/react-sdk/">Solid React SDK</a>
+               </li>
+            </ul>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/user-interface/podbrowser/">PodBrowser</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="https://docs.inrupt.com/pod-spaces/">Pod Spaces</a>
+         </li>
+            <li class="nav-item"><a class="nav-link" href="#">API</a>
+                 <ul class="nav-children">
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client/" >solid-client (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-authn-browser/" >solid-client-authn-browser (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-authn-node/">solid-client-authn-node (JS)</a>
+                    </li>
+                    <li class="nav-item nav-childitem">
+                       <a href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client-notifications/">solid-client-notifications (JS)</a>
+                    </li>
+                 </ul>
+            </li></ul>
       </div>
       
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://inrupt.atlassian.net/servicedesk" rel="noopener" target="_blank" title="Support Desk">
+            <span><i class="fas fa-tools"></i></span>
+            <label class="sr-only">Support Desk</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://forum.solidproject.org/" rel="noopener" target="_blank" title="Solid forum">
+            <span><i class="fas fa-users"></i></span>
+            <label class="sr-only">Solid forum</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://inrupt.com/blog" rel="noopener" target="_blank" title="Inrupt Blog">
+            <span><i class="fas fa-blog"></i></span>
+            <label class="sr-only">Inrupt Blog</label>
+          </a>
+        </li>
+      </ul>
+      </div>
       
     </div>
+  </div>
 </div>
     </nav>
     
@@ -135,313 +189,411 @@
     <div class="container-xl">
       <div class="row">
           
-          <div class="col-12 col-md-3 bd-sidebar">
-
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form>
-
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-
-
-  
-  
-
-  
-  <ul class="nav bd-sidenav">
+     <p class="caption">
+       <a class="reference internal" href="https://docs.inrupt.com/developer-tools/api/javascript/solid-client">Inrupt solid-client API</a>
+     </p>
      
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_acl.html">Module: acl/acl</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_agent.html">Module: acl/agent</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_class.html">Module: acl/class</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_group.html">Module: acl/group</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="acl_mock.html">Module: acl/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="interfaces.html">Module: interfaces</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item active toctree-l1"> <a class="nav-link" href="">Module: resource/file</a>
-             
-             
-               
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="resource_mock.html">Module: resource/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="resource_resource.html">Module: resource/resource</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="resource_soliddataset.html">Module: resource/solidDataset</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_add.html">Module: thing/add</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_get.html">Module: thing/get</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_mock.html">Module: thing/mock</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_remove.html">Module: thing/remove</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_set.html">Module: thing/set</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="thing_thing.html">Module: thing/thing</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/interfaces.solidclienterror.html">Class: SolidClientError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/resource_resource.fetcherror.html">Class: FetchError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.thingexpectederror.html">Class: ThingExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.validpropertyurlexpectederror.html">Class: ValidPropertyUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.validthingurlexpectederror.html">Class: ValidThingUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-         
-             <li class="nav-item  toctree-l1"> <a class="nav-link" href="../classes/thing_thing.validvalueurlexpectederror.html">Class: ValidValueUrlExpectedError</a>
-             
-             
-             </li> 
-           
-      
-  </ul>
-</div>
+
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="access_universal.html">
+   Module: access/universal
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_acl.html">
+   Module: acl/acl
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_agent.html">
+   Module: acl/agent
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_class.html">
+   Module: acl/class
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_group.html">
+   Module: acl/group
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acl_mock.html">
+   Module: acl/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_acp.html">
+   Module: acp/acp
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_control.html">
+   Module: acp/control
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_mock.html">
+   Module: acp/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_policy.html">
+   Module: acp/policy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acp_rule.html">
+   Module: acp/rule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="formats.html">
+   Module: formats
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="interfaces.html">
+   Module: interfaces
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="profile_jwks.html">
+   Module: profile/jwks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="profile_webid.html">
+   Module: profile/webid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rdfjs.html">
+   Module: rdfjs
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Module: resource/file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_mock.html">
+   Module: resource/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_resource.html">
+   Module: resource/resource
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="resource_solidDataset.html">
+   Module: resource/solidDataset
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_add.html">
+   Module: thing/add
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_build.html">
+   Module: thing/build
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_get.html">
+   Module: thing/get
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_mock.html">
+   Module: thing/mock
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_remove.html">
+   Module: thing/remove
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_set.html">
+   Module: thing/set
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="thing_thing.html">
+   Module: thing/thing
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../interfaces/access_universal.Access.html">
+   Interface: Access
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/interfaces.SolidClientError.html">
+   Class: SolidClientError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/resource_resource.FetchError.html">
+   Class: FetchError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ThingExpectedError.html">
+   Class: ThingExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidPropertyUrlExpectedError.html">
+   Class: ValidPropertyUrlExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidThingUrlExpectedError.html">
+   Class: ValidThingUrlExpectedError
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../classes/thing_thing.ValidValueUrlExpectedError.html">
+   Class: ValidValueUrlExpectedError
+  </a>
+ </li>
+</ul>
+
+  </div>
 </nav>
-          </div>
+            </div>
+            
           
 
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
               
+              <div class="toc-item">
+                
 <div class="tocsection onthispage pt-5 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
 
 <nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#type-aliases">
+     Type aliases
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions">
+     Functions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Type aliases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getfileoptions">
+     GetFileOptions
+    </a>
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#table-of-contents" class="nav-link">Table of contents</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#type-aliases" class="nav-link">Type aliases</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#functions" class="nav-link">Functions</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#id1" class="nav-link">Type aliases</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getfileoptions" class="nav-link">GetFileOptions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#type-declaration" class="nav-link">Type declaration:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#writefileoptions" class="nav-link">WriteFileOptions</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#id2" class="nav-link">Functions</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#deletefile" class="nav-link">deleteFile</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#parameters" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#getfile" class="nav-link">getFile</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id3" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#overwritefile" class="nav-link">overwriteFile</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#type-parameters" class="nav-link">Type parameters:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id4" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#savefileincontainer" class="nav-link">saveFileInContainer</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id5" class="nav-link">Type parameters:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#id6" class="nav-link">Parameters:</a>
-        </li>
-    
-            </ul>
-        </li>
-    
-            </ul>
-        </li>
-    
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#type-declaration">
+       Type declaration
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#defined-in">
+       Defined in
+      </a>
+     </li>
     </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writefileoptions">
+     WriteFileOptions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deletefile">
+     deleteFile
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parameters">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#returns">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getfile">
+     getFile
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#overwritefile">
+     overwriteFile
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#type-parameters">
+       Type parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#savefileincontainer">
+     saveFileInContainer
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       Type parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id12">
+       Parameters
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id13">
+       Returns
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       Defined in
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
-
-
+              </div>
               
+              <div class="toc-item">
+                
+              </div>
+              
+            
           </div>
           
 
           
+          
+            
+          
           <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
               
+ 
+  <div class="related">
+  
+</div>
+
   
               <div>
                 
   <p><a class="reference internal" href="../index.html"><span class="doc std std-doc">&#64;inrupt/solid-client</span></a> / resource/file</p>
-<div class="section" id="module-resource-file">
+<section class="tex2jax_ignore mathjax_ignore" id="module-resource-file">
 <h1>Module: resource/file<a class="headerlink" href="#module-resource-file" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="table-of-contents">
+<section id="table-of-contents">
 <h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="type-aliases">
+<section id="type-aliases">
 <h3>Type aliases<a class="headerlink" href="#type-aliases" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="resource_file.html#getfileoptions">GetFileOptions</a></p></li>
 <li><p><a class="reference external" href="resource_file.html#writefileoptions">WriteFileOptions</a></p></li>
 </ul>
-</div>
-<div class="section" id="functions">
+</section>
+<section id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="resource_file.html#deletefile">deleteFile</a></p></li>
@@ -449,13 +601,13 @@
 <li><p><a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a></p></li>
 <li><p><a class="reference external" href="resource_file.html#savefileincontainer">saveFileInContainer</a></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="id1">
+</section>
+</section>
+<section id="id1">
 <h2>Type aliases<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="getfileoptions">
+<section id="getfileoptions">
 <h3>GetFileOptions<a class="headerlink" href="#getfileoptions" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>GetFileOptions</strong>: <em>object</em></p>
+<p>Ƭ <strong>GetFileOptions</strong>: <code class="docutils literal notranslate"><span class="pre">Object</span></code></p>
 <p>Options when fetching a file from a Pod.</p>
 <p>Available options:</p>
 <ul class="simple">
@@ -464,8 +616,8 @@
 This will be used to execute the actual requests. This option can be used to, for example,
 attach credentials to requests that need authentication.</p></li>
 </ul>
-<div class="section" id="type-declaration">
-<h4>Type declaration:<a class="headerlink" href="#type-declaration" title="Permalink to this headline">¶</a></h4>
+<section id="type-declaration">
+<h4>Type declaration<a class="headerlink" href="#type-declaration" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -474,37 +626,49 @@ attach credentials to requests that need authentication.</p></li>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">fetch</span></code></p></td>
-<td class="text-align:left"><p><em>typeof</em> window.fetch</p></td>
+<td class="text-align:left"><p>typeof <code class="docutils literal notranslate"><span class="pre">window.fetch</span></code></p></td>
 </tr>
 </tbody>
 </table>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/resource/file.ts#L49">src/resource/file.ts:49</a></p>
-</div>
-</div>
+</section>
+<section id="defined-in">
+<h4>Defined in<a class="headerlink" href="#defined-in" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/resource/file.ts#L49">src/resource/file.ts:49</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="writefileoptions">
+<section id="writefileoptions">
 <h3>WriteFileOptions<a class="headerlink" href="#writefileoptions" title="Permalink to this headline">¶</a></h3>
-<p>Ƭ <strong>WriteFileOptions</strong>: <a class="reference external" href="resource_file.html#getfileoptions"><em>GetFileOptions</em></a> &amp; { <code class="docutils literal notranslate"><span class="pre">contentType</span></code>: <em>string</em>  }</p>
+<p>Ƭ <strong>WriteFileOptions</strong>: <a class="reference external" href="resource_file.html#getfileoptions"><code class="docutils literal notranslate"><span class="pre">GetFileOptions</span></code></a> &amp; { <code class="docutils literal notranslate"><span class="pre">contentType</span></code>: <code class="docutils literal notranslate"><span class="pre">string</span></code>  }</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Options available when writing a file.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/resource/file.ts#L231">src/resource/file.ts:231</a></p>
-</div>
-</div>
-<div class="section" id="id2">
-<h2>Functions<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="deletefile">
+<section id="id2">
+<h4>Defined in<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/resource/file.ts#L265">src/resource/file.ts:265</a></p>
+</section>
+</section>
+</section>
+<section id="id3">
+<h2>Functions<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<section id="deletefile">
 <h3>deleteFile<a class="headerlink" href="#deletefile" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>deleteFile</strong>(<code class="docutils literal notranslate"><span class="pre">file</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>: <em>Partial</em>&lt;<a class="reference external" href="resource_file.html#getfileoptions"><em>GetFileOptions</em></a>&gt;): <em>Promise</em>&lt;void&gt;</p>
+<p>▸ <strong>deleteFile</strong>(<code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">void</span></code>&gt;</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Deletes a file at a given URL.</p>
-<div class="section" id="parameters">
-<h4>Parameters:<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
+<p>For example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="nx">deleteFile</span><span class="p">(</span> <span class="s2">&quot;https://pod.example.com/some/file&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">fetch</span><span class="o">:</span> <span class="nx">fetch</span> <span class="p">});</span>
+</pre></div>
+</div>
+<p>For additional examples, see
+<a class="reference external" href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/tutorial/read-write-files/#delete-a-file">Read/Write Files</a>.</p>
+<section id="parameters">
+<h4>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -514,30 +678,42 @@ attach credentials to requests that need authentication.</p></li>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">file</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a> | <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a> | <a class="reference external" href="interfaces.html#withresourceinfo"><code class="docutils literal notranslate"><span class="pre">WithResourceInfo</span></code></a></p></td>
 <td class="text-align:left"><p>The URL of the file to delete</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">options</span></code></p></td>
-<td class="text-align:left"><p><em>Partial</em>&lt;<a class="reference external" href="resource_file.html#getfileoptions"><em>GetFileOptions</em></a>&gt;</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference external" href="resource_file.html#getfileoptions"><code class="docutils literal notranslate"><span class="pre">GetFileOptions</span></code></a>&gt;</p></td>
 <td class="text-align:left"><p>-</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise</em>&lt;void&gt;</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/resource/file.ts#L113">src/resource/file.ts:113</a></p>
-</div>
-</div>
+</section>
+<section id="returns">
+<h4>Returns<a class="headerlink" href="#returns" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">void</span></code>&gt;</p>
+</section>
+<section id="id4">
+<h4>Defined in<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/resource/file.ts#L131">src/resource/file.ts:131</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="getfile">
+<section id="getfile">
 <h3>getFile<a class="headerlink" href="#getfile" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>getFile</strong>(<code class="docutils literal notranslate"><span class="pre">input</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>: <em>Partial</em>&lt;<a class="reference external" href="resource_file.html#getfileoptions"><em>GetFileOptions</em></a>&gt;): <em>Promise</em>&lt;<a class="reference external" href="interfaces.html#file"><em>File</em></a> &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>&gt;</p>
+<p>▸ <strong>getFile</strong>(<code class="docutils literal notranslate"><span class="pre">input</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference external" href="interfaces.html#file"><code class="docutils literal notranslate"><span class="pre">File</span></code></a> &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><code class="docutils literal notranslate"><span class="pre">WithServerResourceInfo</span></code></a>&gt;</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This function is still experimental and subject to change, even in a non-major release.</p>
 </div>
 <p>Retrieves a file from a URL and returns the file as a blob.</p>
-<div class="section" id="id3">
-<h4>Parameters:<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p>For example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">fileBlob</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">getFile</span><span class="p">(</span><span class="s2">&quot;https://pod.example.com/some/file&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">fetch</span><span class="o">:</span> <span class="nx">fetch</span> <span class="p">});</span>
+</pre></div>
+</div>
+<p>For additional examples, see
+<a class="reference external" href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/tutorial/read-write-files/#retrieve-a-file">Read/Write Files</a>.</p>
+<section id="id5">
+<h4>Parameters<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -547,42 +723,57 @@ attach credentials to requests that need authentication.</p></li>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">input</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>-</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">options</span></code></p></td>
-<td class="text-align:left"><p><em>Partial</em>&lt;<a class="reference external" href="resource_file.html#getfileoptions"><em>GetFileOptions</em></a>&gt;</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference external" href="resource_file.html#getfileoptions"><code class="docutils literal notranslate"><span class="pre">GetFileOptions</span></code></a>&gt;</p></td>
 <td class="text-align:left"><p>Fetching options: a custom fetcher and/or headers.</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise</em>&lt;<a class="reference external" href="interfaces.html#file"><em>File</em></a> &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><em>WithServerResourceInfo</em></a>&gt;</p>
+</section>
+<section id="id6">
+<h4>Returns<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<a class="reference external" href="interfaces.html#file"><code class="docutils literal notranslate"><span class="pre">File</span></code></a> &amp; <a class="reference external" href="interfaces.html#withserverresourceinfo"><code class="docutils literal notranslate"><span class="pre">WithServerResourceInfo</span></code></a>&gt;</p>
 <p>The file as a blob.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/resource/file.ts#L78">src/resource/file.ts:78</a></p>
-</div>
-</div>
+</section>
+<section id="id7">
+<h4>Defined in<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/resource/file.ts#L87">src/resource/file.ts:87</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="overwritefile">
+<section id="overwritefile">
 <h3>overwriteFile<a class="headerlink" href="#overwritefile" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>overwriteFile</strong>&lt;FileExt&gt;(<code class="docutils literal notranslate"><span class="pre">fileUrl</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>, <code class="docutils literal notranslate"><span class="pre">file</span></code>: FileExt, <code class="docutils literal notranslate"><span class="pre">options?</span></code>: <em>Partial</em>&lt;<a class="reference external" href="resource_file.html#writefileoptions"><em>WriteFileOptions</em></a>&gt;): <em>Promise</em>&lt;FileExt &amp; <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>&gt;</p>
+<p>▸ <strong>overwriteFile</strong>&lt;<code class="docutils literal notranslate"><span class="pre">FileExt</span></code>&gt;(<code class="docutils literal notranslate"><span class="pre">fileUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">FileExt</span></code> &amp; <a class="reference external" href="interfaces.html#withresourceinfo"><code class="docutils literal notranslate"><span class="pre">WithResourceInfo</span></code></a>&gt;</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This function is still experimental and subject to change, even in a non-major release.</p>
 </div>
-<p>Saves a file at a given URL, replacing any previous content.</p>
-<p>The Solid server will create any intermediary Containers that do not exist yet, so they do not
-need to be created in advance. For example, if the target URL is
-https://example.pod/container/resource and https://example.pod/container/ does not exist yet,
-it will exist after this function resolves successfully.</p>
-<p>If you know the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Glossary/MIME_type">media type</a>
-of the file you are attempting to write, then you should provide this in the
-<code class="docutils literal notranslate"><span class="pre">options</span></code> parameter. For example, if you know your file is a JPEG image,
-then you should provide the media type <code class="docutils literal notranslate"><span class="pre">image/jpeg</span></code>. If you don’t know, or
-don’t provide a media type, a default type of <code class="docutils literal notranslate"><span class="pre">application/octet-stream</span></code> will
-be applied (which indicates that the file should be regarded as pure binary
-data).</p>
-<div class="section" id="type-parameters">
-<h4>Type parameters:<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
+<p>Saves a file at a given URL. If a file already exists at the URL,
+the function overwrites the existing file.</p>
+<p>For example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">savedFile</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">overwriteFile</span><span class="p">(</span>
+  <span class="s2">&quot;https://pod.example.com/some/container/myFile.txt&quot;</span><span class="p">,</span>
+  <span class="ow">new</span> <span class="nx">Blob</span><span class="p">([</span><span class="s2">&quot;This is a plain piece of text&quot;</span><span class="p">],</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;plain/text&quot;</span> <span class="p">}),</span>
+  <span class="p">{</span> <span class="nx">contentType</span><span class="o">:</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">,</span> <span class="nx">fetch</span><span class="o">:</span> <span class="nx">fetch</span> <span class="p">}</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+<p>For additional example, see
+<a class="reference external" href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/tutorial/read-write-files/#write-a-file-to-a-specific-url">Read/Write Files</a>.</p>
+<p><em>Recommended:</em> In the <code class="docutils literal notranslate"><span class="pre">options</span></code> parameter, you can specify the
+<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Glossary/MIME_type">media type</a>
+of the file in the <code class="docutils literal notranslate"><span class="pre">contentType</span></code>.  If unspecified, the function uses the default type of
+<code class="docutils literal notranslate"><span class="pre">application/octet-stream</span></code>, indicating a binary data file.</p>
+<p>When saving a file with <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a>, the Solid server creates any
+intermediary Containers as needed; i.e., the Containers do not
+need to be created in advance. For example, when saving a file to the target URL of
+https://example.pod/container/resource, if https://example.pod/container/ does not exist,
+the container is created as part of the save.</p>
+<section id="type-parameters">
+<h4>Type parameters<a class="headerlink" href="#type-parameters" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -591,13 +782,13 @@ data).</p>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">FileExt</span></code></p></td>
-<td class="text-align:left"><p>Blob | <em>Buffer</em></p></td>
+<td class="text-align:left"><p>extends <code class="docutils literal notranslate"><span class="pre">Blob</span></code> | <code class="docutils literal notranslate"><span class="pre">Buffer</span></code></p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="id4">
-<h4>Parameters:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="id8">
+<h4>Parameters<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -607,54 +798,74 @@ data).</p>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">fileUrl</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
 <td class="text-align:left"><p>The URL where the file is saved.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">file</span></code></p></td>
-<td class="text-align:left"><p>FileExt</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">FileExt</span></code></p></td>
 <td class="text-align:left"><p>The file to be written.</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">options</span></code></p></td>
-<td class="text-align:left"><p><em>Partial</em>&lt;<a class="reference external" href="resource_file.html#writefileoptions"><em>WriteFileOptions</em></a>&gt;</p></td>
-<td class="text-align:left"><p>Additional parameters for file creation (e.g. a slug, or media type).</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<a class="reference external" href="resource_file.html#writefileoptions"><code class="docutils literal notranslate"><span class="pre">WriteFileOptions</span></code></a>&gt;</p></td>
+<td class="text-align:left"><p>Additional parameters for file creation (e.g., media type).</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise</em>&lt;FileExt &amp; <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>&gt;</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/resource/file.ts#L267">src/resource/file.ts:267</a></p>
-</div>
-</div>
+</section>
+<section id="id9">
+<h4>Returns<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">FileExt</span></code> &amp; <a class="reference external" href="interfaces.html#withresourceinfo"><code class="docutils literal notranslate"><span class="pre">WithResourceInfo</span></code></a>&gt;</p>
+</section>
+<section id="id10">
+<h4>Defined in<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/resource/file.ts#L313">src/resource/file.ts:313</a></p>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="savefileincontainer">
+<section id="savefileincontainer">
 <h3>saveFileInContainer<a class="headerlink" href="#savefileincontainer" title="Permalink to this headline">¶</a></h3>
-<p>▸ <strong>saveFileInContainer</strong>&lt;FileExt&gt;(<code class="docutils literal notranslate"><span class="pre">folderUrl</span></code>: <a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a>, <code class="docutils literal notranslate"><span class="pre">file</span></code>: FileExt, <code class="docutils literal notranslate"><span class="pre">options?</span></code>: <em>Partial</em>&lt;SaveFileOptions&gt;): <em>Promise</em>&lt;FileExt &amp; <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>&gt;</p>
+<p>▸ <strong>saveFileInContainer</strong>&lt;<code class="docutils literal notranslate"><span class="pre">FileExt</span></code>&gt;(<code class="docutils literal notranslate"><span class="pre">folderUrl</span></code>, <code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">options?</span></code>): <code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">FileExt</span></code> &amp; <a class="reference external" href="interfaces.html#withresourceinfo"><code class="docutils literal notranslate"><span class="pre">WithResourceInfo</span></code></a>&gt;</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This function is still experimental and subject to change, even in a non-major release.</p>
 </div>
-<p>Saves a file in a folder associated with the given URL. The final filename may or may
-not be the given <code class="docutils literal notranslate"><span class="pre">slug</span></code>.</p>
-<p>If you know the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Glossary/MIME_type">media type</a>
-of the file you are attempting to save, then you should provide this in the
-<code class="docutils literal notranslate"><span class="pre">options</span></code> parameter. For example, if you know your file is a JPEG image,
-then you should provide the media type <code class="docutils literal notranslate"><span class="pre">image/jpeg</span></code>. If you don’t know, or
-don’t provide a media type, a default type of <code class="docutils literal notranslate"><span class="pre">application/octet-stream</span></code> will
-be applied (which indicates that the file should be regarded as pure binary
-data).</p>
-<p>The Container at the given URL should already exist; if it does not, the returned Promise will
-be rejected. You can initialise it first using <a class="reference external" href="resource_soliddataset.html#createcontainerat">createContainerAt</a>, or directly save the file
-at the desired location using <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a>.</p>
-<p>This function is primarily useful if the current user does not have access to change existing files in
-a Container, but is allowed to add new files; in other words, they have Append, but not Write
-access to a Container. This is useful in situations where someone wants to allow others to,
-for example, send notifications to their Pod, but not to view or delete existing notifications.
-You can pass a suggestion for the new Resource’s name, but the server may decide to give it
-another name — for example, if a Resource with that name already exists inside the given
-Container.
-If the user does have access to write directly to a given location, <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a>
-will do the job just fine, and does not require the parent Container to exist in advance.</p>
-<div class="section" id="id5">
-<h4>Type parameters:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p>Saves a file in an existing folder/Container associated with the given URL.</p>
+<p>For example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">savedFile</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">saveFileInContainer</span><span class="p">(</span>
+  <span class="s2">&quot;https://pod.example.com/some/existing/container/&quot;</span><span class="p">,</span>
+  <span class="ow">new</span> <span class="nx">Blob</span><span class="p">([</span><span class="s2">&quot;This is a plain piece of text&quot;</span><span class="p">],</span> <span class="p">{</span> <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;plain/text&quot;</span> <span class="p">}),</span>
+  <span class="p">{</span> <span class="nx">slug</span><span class="o">:</span> <span class="s2">&quot;suggestedFileName.txt&quot;</span><span class="p">,</span> <span class="nx">contentType</span><span class="o">:</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">,</span> <span class="nx">fetch</span><span class="o">:</span> <span class="nx">fetch</span> <span class="p">}</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+<p>For additional example, see
+<a class="reference external" href="https://docs.inrupt.com/developer-tools/javascript/client-libraries/tutorial/read-write-files/#save-a-file-into-an-existing-container">Read/Write Files</a>.</p>
+<p>In the <code class="docutils literal notranslate"><span class="pre">options</span></code> parameter,</p>
+<ul class="simple">
+<li><p>You can suggest a file name in the <code class="docutils literal notranslate"><span class="pre">slug</span></code> field.  However, the Solid
+Server may or may not use the suggested <code class="docutils literal notranslate"><span class="pre">slug</span></code> as the file name.</p></li>
+<li><p><em>Recommended:</em> You can specify the <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Glossary/MIME_type">media type</a>
+of the file in the <code class="docutils literal notranslate"><span class="pre">contentType</span></code>.  If unspecified, the function uses the default type of
+<code class="docutils literal notranslate"><span class="pre">application/octet-stream</span></code>, indicating a binary data file.</p></li>
+</ul>
+<p>The function saves a file into an <em>existing</em> Container. If the
+Container does not exist, either:</p>
+<ul class="simple">
+<li><p>Create the Container first using <a class="reference external" href="resource_solidDataset.html#createcontainerat">createContainerAt</a>, and then
+use the function, or</p></li>
+<li><p>Use <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a> to save the file. <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a> creates
+the Containers in the saved file path as needed.</p></li>
+</ul>
+<p>Users who only have <code class="docutils literal notranslate"><span class="pre">Append</span></code> but not <code class="docutils literal notranslate"><span class="pre">Write</span></code> access to a Container
+can use <a class="reference external" href="resource_file.html#savefileincontainer">saveFileInContainer</a> to save new files to the Container.
+That is, <a class="reference external" href="resource_file.html#savefileincontainer">saveFileInContainer</a> is useful in situations where users
+can add new files to a Container but not change existing files in
+the Container, such as users given access to send notifications to
+another’s Pod but not to view or delete existing notifications in that Pod.</p>
+<p>Users with <code class="docutils literal notranslate"><span class="pre">Write</span></code> access to the given folder/Container may prefer to
+use <a class="reference external" href="resource_file.html#overwritefile">overwriteFile</a>.</p>
+<section id="id11">
+<h4>Type parameters<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -663,13 +874,13 @@ will do the job just fine, and does not require the parent Container to exist in
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">FileExt</span></code></p></td>
-<td class="text-align:left"><p>Blob | <em>Buffer</em></p></td>
+<td class="text-align:left"><p>extends <code class="docutils literal notranslate"><span class="pre">Blob</span></code> | <code class="docutils literal notranslate"><span class="pre">Buffer</span></code></p></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="id6">
-<h4>Parameters:<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="id12">
+<h4>Parameters<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Name</p></th>
@@ -679,54 +890,71 @@ will do the job just fine, and does not require the parent Container to exist in
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">folderUrl</span></code></p></td>
-<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><em>Url</em></a> | <a class="reference external" href="interfaces.html#urlstring"><em>UrlString</em></a></p></td>
-<td class="text-align:left"><p>The URL of the folder where the new file is saved.</p></td>
+<td class="text-align:left"><p><a class="reference external" href="interfaces.html#url"><code class="docutils literal notranslate"><span class="pre">Url</span></code></a> | <a class="reference external" href="interfaces.html#urlstring"><code class="docutils literal notranslate"><span class="pre">UrlString</span></code></a></p></td>
+<td class="text-align:left"><p>The URL of an existing folder where the new file is saved.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">file</span></code></p></td>
-<td class="text-align:left"><p>FileExt</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">FileExt</span></code></p></td>
 <td class="text-align:left"><p>The file to be written.</p></td>
 </tr>
 <tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">options</span></code></p></td>
-<td class="text-align:left"><p><em>Partial</em>&lt;SaveFileOptions&gt;</p></td>
+<td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">Partial</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">SaveFileOptions</span></code>&gt;</p></td>
 <td class="text-align:left"><p>Additional parameters for file creation (e.g. a slug).</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Returns:</strong> <em>Promise</em>&lt;FileExt &amp; <a class="reference external" href="interfaces.html#withresourceinfo"><em>WithResourceInfo</em></a>&gt;</p>
+</section>
+<section id="id13">
+<h4>Returns<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">Promise</span></code>&lt;<code class="docutils literal notranslate"><span class="pre">FileExt</span></code> &amp; <a class="reference external" href="interfaces.html#withresourceinfo"><code class="docutils literal notranslate"><span class="pre">WithResourceInfo</span></code></a>&gt;</p>
 <p>A Promise that resolves to the saved file, if available, or <code class="docutils literal notranslate"><span class="pre">null</span></code> if the current user does not have Read access to the newly-saved file. It rejects if saving fails.</p>
-<p>Defined in: <a class="reference external" href="https://github.com/inrupt/solid-client-js/blob/d0e4c0d/src/resource/file.ts#L188">src/resource/file.ts:188</a></p>
-</div>
-</div>
-</div>
-</div>
+</section>
+<section id="id14">
+<h4>Defined in<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://github.com/admariner/solid-client-js/blob/ee538e8/src/resource/file.ts#L222">src/resource/file.ts:222</a></p>
+</section>
+</section>
+</section>
+</section>
 
 
               </div>
               
 
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="interfaces.html" title="previous page">Module: interfaces</a>
-    <a class='right-next' id="next-link" href="resource_mock.html" title="next page">Module: resource/mock</a>
 
-              </div>
+              
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="rdfjs.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-title">Module: rdfjs</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="resource_mock.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-title">Module: resource/mock</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
 
       </div>
     </div>
-
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    <footer class="footer">
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
-    <p>
-          &copy; Copyright 2021 Inrupt Inc.<br/>
-    </p>
+    
+    <div class="footer-item">
+      <div class="container">
+      <p>&copy; 2021 Inrupt Inc. </p>
+</div>
+    </div>
+    
   </div>
 </footer>
   </body>
